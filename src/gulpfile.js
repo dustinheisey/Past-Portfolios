@@ -104,10 +104,14 @@ gulp.task('html', function(callback){
 });
 
 gulp.task('edit:html', function() {
+  
   return gulp.src('index.html')
-  .pipe(useref())
-  .pipe(gulp.dest('../build'));
+    .pipe(useref())
+    .pipe(gulp.dest('../build'));
 
+});
+
+gulp.task('compress:css', function(){
 });
 
 gulp.task('critical', function (cb) {
