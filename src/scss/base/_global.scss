@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../../assets/ocean.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 3vh;
+    min-width: 100%;
+
+    @include bp-phone {
+        padding: 3vh;
+    }
+}

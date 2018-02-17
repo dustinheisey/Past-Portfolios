@@ -1,0 +1,348 @@
+ .section{   
+     
+    &-left {
+        @include img-left;
+        background-color: $white;
+    }
+
+    &-right {
+        @include img-right;
+        background-color: $white;
+    }
+
+    &__img {
+
+        height: 90%;
+        width: 90%;
+        background-color: $white;
+        border: 2rem solid $turquoise;
+        grid-area: img;
+        
+        &-box {
+
+            @include center;
+
+            &--outer {
+
+                @include center;
+                height: 90vh;
+                width: 90vh;
+                margin: 3rem;
+                background-color: $black;
+                box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.73);
+                transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+                @include bp-phone {
+                    margin: 3vh;
+                    height: 50vh;
+                    width: 50vh;
+                    margin-top: -8vh;
+                }
+
+                // @include bp-tablet-p {
+                //     margin: 3rem;
+                // }
+
+                // @include bp-tablet-l {
+                //     height: 90vh;
+                //     width: 90vh;
+                //     margin: 3rem;
+                // }
+
+                &:hover {
+                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                }
+
+            }
+
+            &--inner {
+
+                @include center;
+                height: 90%;
+                width: 90%;
+                background-color: $grey-light;
+
+            }
+
+        }
+    }
+
+    &__text-box {
+
+        @include unslant;
+        @include center-h;
+        margin: auto;
+        grid-area: text;
+
+        @include bp-phone {
+            margin-top: 6vh;
+        }
+        
+    }
+
+    &__text {
+
+        &--heading {
+
+            font-size: 6vmin;
+            @include uppercase;
+            margin-bottom: 1rem;
+
+            @include bp-phone {
+                font-size: 8vmin;
+            }
+
+            @include bp-tablet-p {
+                font-size: 5vmin;
+            }
+
+        }
+
+    }
+    
+}
+
+.grid-1 {
+
+    @include grid;
+    margin-top: -9vh;
+    margin-bottom: 3vh;
+
+    @include bp-phone {
+        margin-top: -4vh;
+    }
+
+    &__itm {
+
+        @include grid-itm;
+
+        &-1 {
+            grid-row: 1/3;
+            background-color: darken($turquoise, 6%);
+    
+        }
+
+        &-2 {
+            grid-area: 1/2/3/4;
+            background-color: darken($turquoise, 3%);
+    
+        }
+
+        &-3 {
+            grid-column: 4/5;
+            grid-row: 1/-1;
+            background-color: $turquoise;
+        }
+
+        &-4 {
+            grid-column: 1/4;
+            grid-row: 3;
+            background-color: lighten($turquoise, 3%);
+    
+        }
+
+        &-5 {
+            grid-area: 1/5/-1/-1;
+            background-color: lighten($turquoise, 6%);
+        }
+
+    }
+
+}
+
+.grid-2 {
+    @include grid; 
+
+    &__itm {
+        @include grid-itm;
+
+        &-1 {
+            grid-area: 1/1/3/3;
+            background-color: darken($turquoise, 6%);
+        }
+
+        &-2 {
+            grid-area: 1/3/2/6;
+            background-color: darken($turquoise, 3%);
+            
+        }
+
+        &-3 {
+            grid-area: 1/6/-1/-1;
+            background-color: $turquoise;
+            
+        }
+
+        &-4 {
+            grid-area: 3/1/-1/3;
+            background-color: lighten($turquoise, 3%);
+            
+        }
+
+        &-5 {
+            grid-area: 2/3/-1/6;
+            background-color: lighten($turquoise, 6%);
+            
+        }
+    }
+
+
+}
+
+.grid-3 {
+
+    @include grid; 
+
+    &__itm {
+        @include grid-itm;
+
+        &-1 {
+            grid-area: 1/1/-1/2;
+            background-color: darken($turquoise, 6%);
+        }
+
+        &-2 {
+            grid-area: 1/2/3/4;
+            background-color: darken($turquoise, 3%);
+            
+        }
+
+        &-3 {
+            grid-area: 3/2/-1/6;
+            background-color: $turquoise;
+            
+        }
+
+        &-4 {
+            grid-area: 1/4/3/6;
+            background-color: lighten($turquoise, 3%);
+            
+        }
+
+        &-5 {
+            grid-area: 1/6/-1/-1;
+            background-color: lighten($turquoise, 6%);
+            
+        }
+    }
+
+
+}
+
+.grid-4 {
+    @include grid; 
+
+    &__itm {
+        @include grid-itm;
+
+        &-1 {
+            grid-area: 1/1/3/2;
+            background-color: darken($turquoise, 6%);
+
+        }
+
+        &-2 {
+            grid-area: 1/2/2/-1;
+            background-color: darken($turquoise, 3%);
+            
+        }
+
+        &-3 {
+            grid-area: 2/2/3/5;
+            background-color: $turquoise;
+            
+        }
+
+        &-4 {
+            grid-area: 2/5/-1/-1;
+            background-color: lighten($turquoise, 3%);
+            
+        }
+
+        &-5 {
+            grid-area: 3/1/-1/5;
+            background-color: lighten($turquoise, 6%);
+        }
+
+    }
+
+}
+
+.grid-5 {
+    @include grid; 
+
+    &__itm {
+        @include grid-itm;
+
+        &-1 {
+            grid-area: 1/1/3/4;
+            background-color: darken($turquoise, 6%);
+        }
+
+        &-2 {
+            grid-area: 1/4/3/5;
+            background-color: darken($turquoise, 3%);
+            
+        }
+
+        &-3 {
+            grid-area: 1/5/2/-1;
+            background-color: $turquoise;
+            
+        }
+
+        &-4 {
+            grid-area: 3/1/-1/5;
+            background-color: lighten($turquoise, 3%);
+        }
+
+        &-5 {
+            grid-area: 2/5/-1/-1;
+            background-color: lighten($turquoise, 6%);
+        }
+
+    }
+
+
+}
+
+.grid-6 {
+    @include grid; 
+
+    &__itm {
+        @include grid-itm;
+
+        &-1 {
+            grid-area: 1/1/-1/2;
+            background-color: darken($turquoise, 6%);
+
+        }
+
+        &-2 {
+            grid-area: 1/2/-1/4;
+            background-color: darken($turquoise, 3%);
+            
+        }
+
+        &-3 {
+            grid-area: 1/4/3/6;
+            background-color: $turquoise;
+            
+        }
+
+        &-4 {
+            grid-area: 1/6/3/-1;
+            background-color: lighten($turquoise, 3%);
+            
+        }
+
+        &-5 {
+            grid-area: 3/4/-1/-1;
+            background-color: lighten($turquoise, 6%);
+            
+        }
+
+    }
+
+}
+

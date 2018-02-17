@@ -1,0 +1,87 @@
+.about {
+    @include slant;
+    height: 110vh;
+    width: 100%;
+    @include center;
+    z-index: 2;
+    background-color: $white;
+
+    @include bp-phone {
+        height: 80vh;
+    }
+
+    &__box {
+        @include center;
+        height: 90%;
+        width: 95%;
+        background-color: $black;
+        box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.73);
+
+        @include bp-phone {
+            width: 90%;
+        }
+
+        &--inner {
+            @include center;
+            height: 90%;
+            width: 95%;
+            background-color: $grey-light;
+
+            @include bp-phone {
+                width: 90%;
+            }
+        }
+    }
+
+    &__text-box {
+        @include center;
+        text-align: center;
+        align-content: center;
+        flex-wrap: wrap; 
+        border: 5vmin solid $turquoise;
+        height: 90%;
+        padding: 0 6rem;
+        width:95%;
+        background-color: $white;
+
+        @include bp-phone {
+            padding: 0 3rem;
+            border: 3vmin solid $turquoise;
+        }
+
+    }
+
+    &__heading {
+        letter-spacing: 1.5rem;
+        @include unslant;
+        @include uppercase;
+        font-size: 13vmin;
+
+        @include bp-phone {
+            font-size: 8vmin;
+            letter-spacing: .5rem;
+        }
+
+        @include bp-tablet-p {
+            font-size: 9vmin;
+            letter-spacing: .5rem;
+        }
+        
+    }
+
+    &__text {
+        letter-spacing: 1rem;
+        @include unslant;
+        @include uppercase;
+        font-size: 4vmin;
+
+        @include bp-phone {
+            font-size: 3vmin;
+            letter-spacing: .5rem;
+        }
+
+        @include bp-tablet-p {
+            letter-spacing: .5rem;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.footer {
+    height: 8vh;
+    width: 100%;
+    @include center;
+    
+    background-color: $turquoise;
+    justify-content: space-between;
+}
+
+.footer__copywrite {
+    font-size: 2.5vh;
+    text-transform: uppercase;
+    color: $white;
+    margin-left: 3vh;
+
+    @include bp-phone {
+        margin: auto;
+        font-size: 2vh;
+    }
+
+    &--name {
+        transition: all .3s;
+
+        &:hover {
+            color: $black;
+        }
+    }
+}

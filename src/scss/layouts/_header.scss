@@ -1,0 +1,206 @@
+.header {
+    height: 150vh;
+    width: 100%;
+    background-color: $white;
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+    
+    display: grid;
+
+    grid-template-rows: .3fr repeat(6, 1fr);
+    grid-template-columns: repeat( 5, 1fr);
+
+    grid-template-areas: 
+                         ". . . . ."
+                         ". . l . ."
+                         ". . n . ."
+                         ". h h h ."
+                         ". h h h ."
+                         ". . . . ."
+                         ". . . . .";
+
+    @include bp-phone {
+        padding-top: 4rem;
+        height: 70vh;
+        clip-path: polygon(0 0, 100% 0, 100% 87%, 0 95%);
+        
+        grid-template-rows: 1fr .3fr 2fr;
+        grid-template-columns: 100%;
+        grid-gap: 1vh;
+
+        grid-template-areas: "l"
+                             "n"
+                             "h";
+    }
+
+    @include bp-tablet-p {
+        clip-path: polygon(0 0, 100% 0, 100% 87%, 0 97%);
+
+        grid-template-rows: 1fr .3fr 2fr;
+        grid-template-columns: 100%;
+        grid-gap: 1vh;
+
+        grid-template-areas: "l"
+                             "n"
+                             "h";
+    }
+
+    @include bp-tablet-l{
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 98%);
+    }
+
+    @include bp-laptop{
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 98%);
+    }
+
+    @include bp-desktop{
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 98%);
+    }
+
+    &__logo-box {
+        @include center;
+        grid-area: l;
+
+        &--outer {
+            height: 25vh;
+            width: 25vh;
+            background-color: $black;
+            @include center;
+            box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.73);
+
+            @include bp-phone {
+                margin: 0;
+                margin-top: 2rem;
+                height: 20vh;
+                width: 20vh;
+             }
+
+             @include bp-tablet-p {
+                margin: 0;
+                margin-top: 4rem;
+                height: 25vh;
+                width: 25vh;
+             }
+        }
+
+        &--inner {
+            height: 85%;
+            width: 85%;
+            @include center;
+            background-color: $grey-light;
+        }
+    }
+
+    &__logo {
+        height: 85%;
+        width: 85%;
+        border: 1rem solid $turquoise;
+    }
+
+    &__heading-box {
+
+        &--outer {
+            grid-area: h;
+            @include center;
+            background-color: $black;
+            height: 125%;
+            width: 100%;
+            box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.73);
+
+            @include bp-phone {
+                margin: 0 auto;
+                height: 60%;
+                width: 90%;
+            }
+
+            @include bp-tablet-p {
+                margin: 0 auto;
+                height: 60%;
+                width: 90%;
+            }
+        }
+
+        &--inner {
+            @include center;
+            @include uppercase;
+            height: 85%;
+            width: 95%;
+            background-color: $grey-light;
+        }
+    }
+
+    &__heading {
+        
+        @include center;
+
+        height: 85%;
+        width: 95%;
+        background-color: $white;
+        border: 2vh solid $turquoise;
+
+        &--main {
+            font-size: 8vmin;
+            display: block;
+
+            @include bp-phone {
+                font-size: 6vmin;
+            }
+        }
+
+        &--sub {
+            font-size: 4vmin;
+            color: $grey;
+            display: block;
+
+            @include bp-phone {
+                font-size: 3vmin;
+            }
+        }
+
+    }
+}
+
+.nav{
+
+    grid-area: n;
+    height: 100%;
+    width: 100%;
+    @include center;
+
+    &__list {
+        @include center;
+        background-color: $white;
+        list-style: none;
+        flex-wrap: nowrap;
+        padding-left: 5rem;
+
+        @include bp-phone {
+            padding-left: 0;
+        }
+    }
+
+    &__link {
+        @include uppercase;
+        color: $black;
+        font-size: 6vh;
+        
+        margin-left: 7vh;
+        margin-right: 7vh;
+        transition: all .3s;
+
+        @include bp-phone {
+            font-size: 1.5rem;
+            margin-left: 2vw;
+            margin-right: 2vw;
+        }
+
+        @include bp-tablet-p {
+            font-size: 3.5rem;
+            margin-left: 4vw;
+            margin-right: 4vw;
+        }
+
+        &:hover {
+            color: $turquoise;
+        }
+    }
+}

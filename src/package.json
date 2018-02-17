@@ -1,0 +1,44 @@
+{
+  "name": "placeholder",
+  "version": "1.0.0",
+  "description": "placeholder description",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/style.scss styles/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:css": "node-sass scss/style.scss styles/style.comp.css",
+    "concat:css": "concat -o styles/style.concat.css styles/icon-font.css styles/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' styles/style.concat.css -o styles/style.prefix.css",
+    "compress:css": "node-sass styles/style.prefix.css styles/style.css --output-style compressed",
+    "concat:js": "concat -o scripts/app.concat.js scripts/plugins/jquery-3.3.1.min.js scripts/app.js",
+    "build:css": "npm-run-all compile:css concat:css prefix:css purify:css"
+  },
+  "author": "Dustin Heisey",
+  "license": "MIT",
+  "devDependencies": {
+    "critical": "^1.1.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.0.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-multi-dest": "^1.3.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-strip-css-comments": "^2.0.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uncss": "^1.0.6",
+    "jshint": "^2.9.5",
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^5.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "gulp-useref": "^3.1.4",
+    "webpack-stream": "^4.0.1"
+  }
+}

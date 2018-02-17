@@ -1,0 +1,93 @@
+//Use REM 1 rem = 10px
+
+html {
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'lato', sans-serif;
+}
+
+h2 {
+    font-family: 'lato', sans-serif;
+}
+
+h3 {
+    font-family: 'lato', sans-serif;
+}
+
+h4 {
+    font-family: 'lato', sans-serif;
+}
+
+h5 {
+    font-family: 'lato', sans-serif;
+}
+
+h6 {
+    font-family: 'lato', sans-serif;
+}
+
+small {
+    font-family: 'lato', sans-serif;    
+}
+
+p {
+    font-family: 'open-sans', sans-serif;
+}
+
+a {
+    font-family: 'lato', sans-serif;
+    text-decoration: none;
+}
+
+.section__icon {
+
+    &--html {
+        color: $red;
+        font-size: 8vmin;
+        @include icon;
+    }
+
+    &--css {
+        color: $blue-light;
+        font-size: 8vmin;
+        @include icon;
+    }
+
+    &--js {
+        color: $yellow;
+        font-size: 8vmin;
+        @include icon;
+    }
+
+    &--bootstrap {
+        color: $purple;
+        font-size: 8vmin;
+        @include icon;
+    }
+
+    &--wordpress {
+        color: $grey-dark;
+        font-size: 8vmin;
+        @include icon;
+    }
+
+    &--google {
+        color: $blue;
+        font-size: 8vmin;
+        @include icon;
+    }
+
+    &--github {
+        font-size: 5vmin;
+        margin-right: 3vh;
+        color: $white;
+        transition: all .3s;
+
+        &:hover {
+            color: $black;
+        }
+    }
+}
