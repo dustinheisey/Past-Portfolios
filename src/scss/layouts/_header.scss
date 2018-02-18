@@ -93,7 +93,7 @@
     &__logo {
         height: 85%;
         width: 85%;
-        border: 1rem solid $turquoise;
+        border: 1rem solid $color-primary;
     }
 
     &__heading-box {
@@ -135,7 +135,7 @@
         height: 85%;
         width: 95%;
         background-color: $white;
-        border: 2vh solid $turquoise;
+        border: 2vh solid $color-primary;
 
         &--main {
             font-size: 8vmin;
@@ -200,7 +200,7 @@
         }
 
         &:hover {
-            color: $turquoise;
+            color: $color-primary;
         }
     }
 }

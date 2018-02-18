@@ -57,7 +57,7 @@
         width: 94.5%;
         padding: 5%;
         background-color: $white;
-        border: 2rem solid $turquoise;
+        border: 2rem solid $color-primary;
     }
     
     &__heading {
@@ -82,7 +82,7 @@
 
     &__link {
 
-        color: $turquoise;
+        color: $color-primary;
         transition: all .3s;
 
         &:hover {

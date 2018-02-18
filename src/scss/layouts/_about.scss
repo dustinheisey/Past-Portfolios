@@ -38,7 +38,7 @@
         text-align: center;
         align-content: center;
         flex-wrap: wrap; 
-        border: 5vmin solid $turquoise;
+        border: 5vmin solid $color-primary;
         height: 90%;
         padding: 0 6rem;
         width:95%;
@@ -46,7 +46,7 @@
 
         @include bp-phone {
             padding: 0 3rem;
-            border: 3vmin solid $turquoise;
+            border: 3vmin solid $color-primary;
         }
 
     }
