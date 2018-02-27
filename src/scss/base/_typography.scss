@@ -48,36 +48,70 @@ a {
         color: $red;
         font-size: 8vmin;
         @include icon;
+        margin: 0 .1rem;
     }
 
     &--css {
         color: $blue-light;
         font-size: 8vmin;
         @include icon;
+        margin: 0 .1rem;
     }
 
     &--js {
         color: $yellow;
         font-size: 8vmin;
         @include icon;
+        margin: 0 .1rem;
     }
 
     &--bootstrap {
         color: $purple;
         font-size: 8vmin;
         @include icon;
+        margin: 0 .1rem;
     }
 
     &--wordpress {
         color: $grey-dark;
         font-size: 8vmin;
         @include icon;
+        margin: 0 .1rem;
     }
 
     &--google {
         color: $blue;
         font-size: 8vmin;
         @include icon;
+        margin: 0 .1rem;
+    }
+
+    &--vuejs {
+        color: #42b883;
+        font-size: 8vmin;
+        @include icon;
+        margin: 0 .1rem;
+    }
+
+    &--webpack {
+        color: #1d78c1;
+        font-size: 8vmin;
+        @include icon;
+        margin: 0 .1rem;
+    }
+
+    &--babel {
+        color: #fed330;
+        font-size: 8vmin;
+        @include icon;
+        margin: 0 .1rem;
+    }
+
+    &--sass {
+        color: #c69;
+        font-size: 8vmin;
+        @include icon;
+        margin: 0 .1rem;
     }
 
     &--github {

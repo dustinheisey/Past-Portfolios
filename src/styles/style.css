@@ -347,7 +347,8 @@ a {
 .section__icon--html {
   color: #ff3f34;
   font-size: 8vmin;
-  font-size: 6vh; }
+  font-size: 6vh;
+  margin: 0 .1rem; }
   @media only screen and (max-width: 599px) {
     .section__icon--html {
       font-size: 6vh; } }
@@ -355,7 +356,8 @@ a {
 .section__icon--css {
   color: #4bcffa;
   font-size: 8vmin;
-  font-size: 6vh; }
+  font-size: 6vh;
+  margin: 0 .1rem; }
   @media only screen and (max-width: 599px) {
     .section__icon--css {
       font-size: 6vh; } }
@@ -363,7 +365,8 @@ a {
 .section__icon--js {
   color: #ffd32a;
   font-size: 8vmin;
-  font-size: 6vh; }
+  font-size: 6vh;
+  margin: 0 .1rem; }
   @media only screen and (max-width: 599px) {
     .section__icon--js {
       font-size: 6vh; } }
@@ -371,7 +374,8 @@ a {
 .section__icon--bootstrap {
   color: #3c40c6;
   font-size: 8vmin;
-  font-size: 6vh; }
+  font-size: 6vh;
+  margin: 0 .1rem; }
   @media only screen and (max-width: 599px) {
     .section__icon--bootstrap {
       font-size: 6vh; } }
@@ -379,7 +383,8 @@ a {
 .section__icon--wordpress {
   color: #485460;
   font-size: 8vmin;
-  font-size: 6vh; }
+  font-size: 6vh;
+  margin: 0 .1rem; }
   @media only screen and (max-width: 599px) {
     .section__icon--wordpress {
       font-size: 6vh; } }
@@ -387,9 +392,46 @@ a {
 .section__icon--google {
   color: #0fbcf9;
   font-size: 8vmin;
-  font-size: 6vh; }
+  font-size: 6vh;
+  margin: 0 .1rem; }
   @media only screen and (max-width: 599px) {
     .section__icon--google {
+      font-size: 6vh; } }
+
+.section__icon--vuejs {
+  color: #42b883;
+  font-size: 8vmin;
+  font-size: 6vh;
+  margin: 0 .1rem; }
+  @media only screen and (max-width: 599px) {
+    .section__icon--vuejs {
+      font-size: 6vh; } }
+
+.section__icon--webpack {
+  color: #1d78c1;
+  font-size: 8vmin;
+  font-size: 6vh;
+  margin: 0 .1rem; }
+  @media only screen and (max-width: 599px) {
+    .section__icon--webpack {
+      font-size: 6vh; } }
+
+.section__icon--babel {
+  color: #fed330;
+  font-size: 8vmin;
+  font-size: 6vh;
+  margin: 0 .1rem; }
+  @media only screen and (max-width: 599px) {
+    .section__icon--babel {
+      font-size: 6vh; } }
+
+.section__icon--sass {
+  color: #c69;
+  font-size: 8vmin;
+  font-size: 6vh;
+  margin: 0 .1rem; }
+  @media only screen and (max-width: 599px) {
+    .section__icon--sass {
       font-size: 6vh; } }
 
 .section__icon--github {
