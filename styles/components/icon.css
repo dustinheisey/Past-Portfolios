@@ -1,0 +1,15 @@
+.icon:not(.btn) {
+	display: inline-block;
+	inline-size: 1cap;
+	block-size: 1cap;
+	inline-size: 1.5em;
+	block-size: 1.5em;
+}
+
+.icon.small:not(.btn) {
+	font-size: 0.75em;
+}
+
+.icon.large:not(.btn) {
+	font-size: 1.5em;
+}

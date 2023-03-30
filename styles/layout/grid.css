@@ -1,0 +1,35 @@
+/* even grid of children */
+
+.grid {
+	display: grid;
+	gap: var(--gap);
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(min(var(--size, 350px), 100%), 1fr)
+	);
+}
+
+.grid > * {
+	align-items: stretch;
+	margin: 0;
+}
+
+.col-2 {
+	--size: 500px;
+}
+
+.col-3 {
+	--size: 325px;
+}
+
+.col-4 {
+	--size: 250px;
+}
+
+.col-5 {
+	--size: 200px;
+}
+
+.col-6 {
+	--size: 150px;
+}

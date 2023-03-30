@@ -1,0 +1,22 @@
+/* Horizontal scrolling */
+.reel {
+	display: flex;
+	block-size: auto;
+	overflow-x: auto;
+	overflow-y: hidden;
+	gap: var(--gap);
+}
+
+.reel::-webkit-scrollbar {
+	block-size: var(--scrollbar-size, var(--gap));
+}
+
+.reel > * {
+	flex: 0 0 auto;
+}
+
+.reel > img {
+	block-size: 100%;
+	inline-size: auto;
+	flex-basis: auto;
+}

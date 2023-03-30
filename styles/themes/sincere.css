@@ -1,0 +1,25 @@
+/* Sincere - honesty, authenticity, and trustworthiness - soft, rounded shapes, warm and muted colors, and natural textures like wood or fabric */
+
+:root {
+	--color-neutral-700: #0d0a09;
+	--color-neutral-600: #302927;
+	--color-neutral-500: #47403f;
+	--color-neutral-400: #827978;
+	--color-neutral-300: #bdb5b3;
+	--color-neutral-200: #e3dbda;
+	--color-neutral-100: #fcf4f2;
+
+	--color-brand-400: #330d05;
+	--color-brand-300: #662214;
+	--color-brand-200: #cc6652;
+	--color-brand-100: #ff9580;
+
+	--radius-s: 4px;
+	--radius-l: 6px;
+
+	--font-1: Helvetica;
+	--font-2: Arial;
+	--font-3: Georgia;
+	--font-4: Verdana;
+	--font-5: "Proxima Nova";
+}

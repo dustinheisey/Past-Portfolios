@@ -1,0 +1,28 @@
+/* Fill screen, arrange 3 sections vertically evenly, background image */
+.cover {
+	display: flex;
+	flex-direction: column;
+	min-block-size: 75vh;
+	inline-size: 100%;
+	align-items: center;
+	gap: var(--gap-section);
+}
+
+.cover > .main {
+	margin-block: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.cover.large {
+	min-block-size: 100vh;
+}
+
+.cover.small {
+	min-block-size: 75vh;
+}
+
+.cover.light > * {
+	/* color: var(--color-neutral-100); */
+}

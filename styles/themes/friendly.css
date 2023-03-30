@@ -1,0 +1,25 @@
+/* Friendly - approachability, warmth, and positivity - bright, cheerful colors, rounded shapes, and playful illustrations or icons */
+
+:root {
+	--color-neutral-700: #090d0b;
+	--color-neutral-600: #27302c;
+	--color-neutral-500: #3f4743;
+	--color-neutral-400: #78827d;
+	--color-neutral-300: #b3bdb8;
+	--color-neutral-200: #dae3de;
+	--color-neutral-100: #f2fcf7;
+
+	--color-brand-400: #05331c;
+	--color-brand-300: #14663d;
+	--color-brand-200: #52cc8f;
+	--color-brand-100: #80ffbf;
+
+	--radius-s: 4px;
+	--radius-l: 6px;
+
+	--font-1: Helvetica;
+	--font-2: Arial;
+	--font-3: Verdana;
+	--font-4: Tahoma;
+	--font-5: "Open Sans";
+}

@@ -1,0 +1,17 @@
+/* fixed section next to a section that fills the remaining space horizontally  */
+.sidebar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	gap: var(--gap);
+}
+
+.sidebar > .fixed {
+	flex-grow: 1;
+}
+
+.sidebar > :not(.fixed) {
+	flex-basis: 0;
+	flex-grow: 999;
+	min-inline-size: 50%;
+}

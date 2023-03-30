@@ -1,0 +1,12 @@
+input {
+	padding: var(--space-xs);
+	border: 2px solid var(--color-fg);
+	border-radius: var(--radius-s);
+}
+
+textarea {
+	padding: var(--space-xs);
+	border: 2px solid var(--color-fg);
+	border-radius: var(--radius-s);
+	resize: none;
+}

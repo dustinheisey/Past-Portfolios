@@ -1,0 +1,58 @@
+img {
+	border-radius: var(--radius-l);
+	max-inline-size: 100%;
+	block-size: auto;
+	box-shadow: var(--elevation-3);
+}
+
+img.full {
+	inline-size: 100%;
+}
+
+svg,
+video {
+	inline-size: 100%;
+	block-size: auto;
+}
+
+.logo {
+	block-size: 2em;
+	inline-size: auto;
+}
+
+.avatar {
+	border-radius: 50%;
+	inline-size: 2em;
+	aspect-ratio: 1/1;
+}
+
+.avatar.small {
+	font-size: 1em;
+}
+
+.avatar.large {
+	font-size: 2em;
+}
+
+.bg-img {
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-img::before {
+	z-index: -100;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: none;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}

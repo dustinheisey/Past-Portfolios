@@ -1,0 +1,59 @@
+a {
+	/* color: var(--color-fg-primary); */
+	transition: all 0.3s;
+	vertical-align: baseline;
+}
+
+a:hover {
+	/* color: var(--color-brand); */
+}
+
+a.inverse {
+	/* color: var(--color-surface); */
+}
+
+a.light {
+	/* color: var(--color-neutral-100); */
+}
+
+a.dark {
+	/* color: var(--color-neutral-700); */
+}
+
+a.brand {
+	/* color: var(--color-brand-primary); */
+}
+
+a.success {
+	/* color: var(--color-success-primary); */
+}
+
+a.info {
+	/* color: var(--color-info-primary); */
+}
+
+a.warning {
+	/* color: var(--color-warning-primary); */
+}
+
+a.danger {
+	/* color: var(--color-danger-primary); */
+}
+
+.navigation {
+	background: linear-gradient(0deg, currentColor, currentColor) no-repeat right bottom / 0 2px;
+	padding-block-end: 2px;
+	inline-size: max-content;
+	text-decoration: none;
+	transition: background-size 350ms;
+}
+
+.navigation:hover,
+.navigation:focus-visible {
+	background-size: 100% 2px;
+	background-position-x: left;
+}
+
+.media {
+	text-decoration: none;
+}

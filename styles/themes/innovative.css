@@ -1,0 +1,25 @@
+/* Innovative - creativity, forward-thinking, and cutting-edge technology - bold, unconventional shapes and layouts, bright and futuristic colors, and dynamic animations or transitions */
+
+:root {
+	--color-neutral-700: #090d0d;
+	--color-neutral-600: #273030;
+	--color-neutral-500: #3f4747;
+	--color-neutral-400: #788282;
+	--color-neutral-300: #b3bcbd;
+	--color-neutral-200: #dae2e3;
+	--color-neutral-100: #f2fcfc;
+
+	--color-brand-400: #053133;
+	--color-brand-300: #146266;
+	--color-brand-200: #52c6cc;
+	--color-brand-100: #80f9ff;
+
+	--radius-s: 20p;
+	--radius-l: 30px;
+
+	--font-1: Helvetica;
+	--font-2: Futura;
+	--font-3: "Proxima Nova";
+	--font-4: Avenir;
+	--font-5: Gotham;
+}

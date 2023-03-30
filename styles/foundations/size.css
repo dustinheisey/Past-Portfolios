@@ -1,0 +1,13 @@
+.center,
+.grid,
+.reel,
+.masonry,
+.sidebar,
+.stack,
+.switcher {
+	max-inline-size: 100%;
+}
+
+.full {
+	inline-size: 100%;
+}
