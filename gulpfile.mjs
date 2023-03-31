@@ -1,14 +1,12 @@
 import gulp from "gulp";
 import postCSS from "gulp-postcss";
 import minHTML from "gulp-htmlmin";
-import autoprefixer from "autoprefixer";
 import presetEnv from "postcss-preset-env";
 import cssnano from "cssnano";
 import concat from "gulp-concat";
 import cleanCss from "gulp-clean-css";
 import { deleteSync } from "del";
 import imagemin from "gulp-imagemin";
-import optimizejs from "gulp-optimize-js";
 
 const { src, dest, watch } = gulp;
 

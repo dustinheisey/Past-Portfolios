@@ -4,7 +4,7 @@
 	text-align: center;
 	white-space: nowrap;
 	cursor: pointer;
-	max-inline-size: max-content;
+	max-inline-size: 100%;
 	border-radius: var(--radius-btn);
 	font-size: var(--font-size-btn);
 	font-weight: var(--font-weight-btn, var(--font-weight-body));
