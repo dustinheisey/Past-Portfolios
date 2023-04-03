@@ -47,7 +47,12 @@ function processAssets() {
 }
 
 function moveFiles() {
-	return src(["./style.css", "dark-mode.js"]).pipe(gulp.dest("./build"));
+	return src([
+		"./style.css",
+		"dark-mode.js",
+		"browserconfig.xml",
+		"site.webmanifest"
+	]).pipe(gulp.dest("./build"));
 }
 
 const watchFiles = () => {
