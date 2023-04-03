@@ -12,8 +12,6 @@
 	text-transform: var(--text-transform-btn, capitalize);
 	padding: var(--space-2xs) var(--space-m);
 	border: none;
-	/* background-color: var(--color-brand);
-	color: var(--color-brand-muted); */
 	transition: all 0.5s ease 0s;
 }
 
