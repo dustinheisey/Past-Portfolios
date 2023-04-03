@@ -25,6 +25,13 @@
 	padding-block-end: var(--space-3xl);
 }
 
+.mockup {
+	max-inline-size: 60%;
+}
+
+.projects {
+	max-inline-size: 75%;
+}
 #services > section {
 	display: none;
 }
