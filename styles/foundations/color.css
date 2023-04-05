@@ -82,9 +82,12 @@ p {
 .overline,
 .title,
 small,
-small > a,
-label {
+small > a {
 	color: var(--color-accent);
+}
+
+label, .label {
+	color: var(--color-fg);
 }
 
 hr {

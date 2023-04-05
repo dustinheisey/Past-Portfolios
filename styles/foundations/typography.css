@@ -116,9 +116,13 @@ a,
 	font-size: var(--font-size-0);
 }
 
-label,
-.label {
+label {
 	font-size: var(--font-size--1);
+	font-weight: 400;
+}
+
+.label {
+	text-transform: uppercase;
 }
 
 .caption,
@@ -206,7 +210,12 @@ small > a {
 
 label {
 	/* font-size: var(--font-size-label); */
-	font-weight: var(--font-weight-heading);
+	font-weight: 400;
+}
+
+.required {
+	font-size: var(--font-size-0);
+	color: var(--color-accent);
 }
 
 .section > a {

@@ -13,8 +13,6 @@
 	<meta property="og:image" content="https://dustinheisey.com/assets/logo.svg">
 	<meta property="og:description" content="The personal portfolio of Dustin Heisey. I am a web designer who prioritizes user-friendliness, accessibility, and sustainability in all of my projects. Contact me today to learn more about my services.">
 
-
-
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -72,56 +70,64 @@
 		<div class="pe-page stack align-center">
 			<div>
 				<section>
-					<p class="overline">Let's Collaborate</p>
-					<h2 class="section">Start a Project</h2>
-					<p>Ready to take the next step? Fill out the contact form below and let's start a conversation about your project</p>
+					<h2 class="section">Apply to Work With Me</h2>
+					<p>Fill out the application below, and let's make a difference together.</p>
 				</section>
-				<div class="inline justify-between align-start gap-l space-l">
-					<form class="stack align-stretch gap-l grow-2">
-						<div class="stack align-stretch grow-1">
-							<label for="name">Name</label>
-							<input class="bg-light" id="name" type="text">
-						</div>
-						<div class="stack align-stretch grow-1">
-							<label for="email">Email</label>
-							<input class="bg-light" id="email" type="text">
-						</div>
-						<div class="stack align-stretch grow-1">
-							<label for="message">Describe Your Project</label>
-							<textarea class="bg-light" id="message" name="message"></textarea>
-						</div>
-						<button class="large" type="submit">Send</button>
-					</form>
-					<div class="stack">
-						<div>
-							<label><svg focusable="false" class="icon small" viewBox="0 0 24 24">
-									<g fill="currentColor">
-										<path d="M13.4,14.6A2.3,2.3,0,0,1,12,15a2.3,2.3,0,0,1-1.4-.4L0,8.9V19a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V8.9Z" fill="currentColor"></path>
-										<path data-color="color-2" d="M21,2H3A3,3,0,0,0,0,5V6a1.05,1.05,0,0,0,.5.9l11,6a.9.9,0,0,0,.5.1.9.9,0,0,0,.5-.1l11-6A1.05,1.05,0,0,0,24,6V5A3,3,0,0,0,21,2Z"></path>
-									</g>
-								</svg> Email</label>
-							<p>dustin@heisey.email</p>
-						</div>
-						<ul class="inline">
-							<li>
-								<a class="media" href="https://www.upwork.com/">
-									<svg focusable="false" class="icon">
-										<use href="assets/icons.svg#logo-upwork" />
-									</svg>
-									<span class="sr-only">Upwork</span>
-								</a>
-							</li>
-							<li>
-								<a class="media" href="https://github.com/dustinheisey">
-									<svg focusable="false" class="icon">
-										<use href="assets/icons.svg#logo-github" />
-									</svg>
-									<span class="sr-only">Github</span>
-								</a>
-							</li>
-						</ul>
+
+				<form class="stack align-stretch gap-l space-l" autocomplete="on" name="applications" method="POST" data-netlify="true">
+
+					<div class="stack align-stretch">
+						<label class="label" for="name">Full Name <span class="required">&ast;</span></label>
+						<input class="bg-light" name="name" id="name" type="text">
 					</div>
-				</div>
+
+					<div class="stack align-stretch">
+						<label class="label" for="email">Email <span class="required">&ast;</span></label>
+						<input class="bg-light" name="email" id="email" type="email">
+					</div>
+
+					<div class="stack align-stretch">
+						<label class="label" for="message">Describe Your Organization</label>
+						<textarea class="bg-light" id="message" name="message"></textarea>
+					</div>
+
+					<div class="switcher align-start">
+						<fieldset class="stack">
+							<legend class="label nowrap">Organization Type <span class="required">&ast;</span></legend>
+							<label for="business" class="space-xs">
+								<input class="bg-light" id="business" name="organization_type" type="radio">
+								Business
+							</label>
+
+							<label for="nonprofit" class="nowrap"><input class="bg-light" id="nonprofit" name="organization_type" type="radio"> Nonprofit</label>
+						</fieldset>
+
+						<fieldset class="stack">
+							<legend class="label">Services Needed <span class="required">&ast;</span></legend>
+
+							<label for="branding" class="space-xs" class="nowrap"><input class="bg-light" id="branding" name="services_needed" type="checkbox"> Branding</label>
+
+							<label for="website_design_development" class="nowrap" class="nowrap"><input class="bg-light" id="website_design_development" name="services_needed" type="checkbox"> Web Design & Development</label>
+
+							<label for="website_optimization" class="nowrap"><input class="bg-light" id="website_optimization" name="services_needed" type="checkbox"> Website Optimization</label>
+
+							<label for="not_sure" class="nowrap"><input class="bg-light" id="not_sure" name="services_needed" type="checkbox"> I'm Not Sure Yet</label>
+						</fieldset>
+
+						<fieldset class="stack">
+							<legend class="label">Budget <span class="required">&ast;</span></legend>
+							<label for="1000_under" class="space-xs" class="nowrap"><input class="bg-light" id="1000_under" name="budget" type="radio"> $1000 &amp; under</label>
+
+							<label for="2000-5000" class="nowrap"><input class="bg-light" id="2000-5000" name="budget" type="radio"> $2000 - $5000</label>
+
+							<label for="5000-10000" class="nowrap"><input class="bg-light" id="5000-10000" name="budget" type="radio"> $5000 - $10,000</label>
+
+							<label for="10000_up" class="nowrap"><input class="bg-light" id="10000_up" name="budget" type="radio"> $10,000 &amp; up</label>
+						</fieldset>
+					</div>
+
+					<button class="large" type="submit">Apply</button>
+				</form>
 			</div>
 		</div>
 	</main>
