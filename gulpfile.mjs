@@ -50,6 +50,7 @@ function moveFiles() {
 	return src([
 		"./style.css",
 		"dark-mode.js",
+		"service-worker.js",
 		"browserconfig.xml",
 		"site.webmanifest"
 	]).pipe(gulp.dest("./build"));
