@@ -48,10 +48,11 @@ function processAssets() {
 
 function moveFiles() {
 	return src([
-		"./style.css",
+		"style.css",
 		"dark-mode.js",
 		"browserconfig.xml",
-		"manifest.json"
+		"site.webmanifest",
+		"service-worker.js"
 	]).pipe(gulp.dest("./build"));
 }
 
