@@ -3,7 +3,7 @@
 
     /*
       Welcome to our basic Service Worker! This Service Worker offers a basic offline experience
-      while also being easily customizeable. You can add in your own code to implement the capabilities
+      while also being easily customizable. You can add in your own code to implement the capabilities
       listed below, or change anything else you would like.
 
 
@@ -48,7 +48,7 @@
 
     /**
      *  @Lifecycle Activate
-     *  New one activated when old isnt being used.
+     *  New one activated when old isn't being used.
      *
      *  waitUntil(): activating ====> activated
      */

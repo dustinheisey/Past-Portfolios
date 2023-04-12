@@ -51,7 +51,7 @@ function moveFiles() {
 		"./style.css",
 		"dark-mode.js",
 		"browserconfig.xml",
-		"site.webmanifest"
+		"manifest.json"
 	]).pipe(gulp.dest("./build"));
 }
 
