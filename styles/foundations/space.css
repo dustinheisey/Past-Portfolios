@@ -14,7 +14,7 @@
 	--gap-section: var(--space-l);
 	--gap: var(--space-s);
 
-	--inset-body: var(--space-m);
+	--inset-body: var(--space-xl);
 }
 
 header {
@@ -39,6 +39,7 @@ main {
 	align-items: center;
 	justify-content: center;
 	gap: var(--gap-page);
+	padding-block-end: var(--gap-page);
 }
 
 main > *:not(.stack) {
@@ -51,16 +52,6 @@ main > *:is(.stack, .masonry) > * + * {
 
 main > :first-child {
 	padding-block-start: var(--gap-page);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-label {
-	margin: 0;
 }
 
 :is(.hero, .page) + * {

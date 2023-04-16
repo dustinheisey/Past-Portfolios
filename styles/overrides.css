@@ -4,6 +4,10 @@
 	--radius-btn: 999px;
 }
 
+#landing_cover::before {
+	background-image: url("../assets/images/services.jpeg");
+}
+
 /* #header::before {
 	background-image: linear-gradient(
 			to right bottom,

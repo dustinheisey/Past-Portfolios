@@ -31,13 +31,15 @@
 	--font-size-btn: var(--font-size-2);
 	--font-size-btn-l: var(--font-size-4); */
 
-	--font-family-heading: Impact;
-	--font-family-body: Helvetica;
+	--font-family-heading: Charter, "Bitstream Charter", "Sitka Text", Cambria,
+		serif;
+	--font-family-body: Inter, Roboto, "Helvetica Neue", "Arial Nova",
+		"Nimbus Sans", Arial, sans-serif;
 	--font-weight-heading: 700;
 	--font-weight-body: 400;
 	--font-weight-btn: 700;
 
-	--measure-heading: 20ch;
+	--measure-heading: 25ch;
 	--measure-hero: 15ch;
 	--measure-body: 66ch;
 
@@ -84,6 +86,8 @@
 
 html {
 	font-size: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .tag {
@@ -91,7 +95,7 @@ html {
 }
 
 .hero {
-	font-size: var(--font-size-5);
+	font-size: var(--font-size-4);
 }
 
 .page {
@@ -108,12 +112,46 @@ html {
 
 .title {
 	font-size: var(--font-size-0);
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-2xs);
 }
 
 p,
 a,
 .overline {
 	font-size: var(--font-size-0);
+}
+
+.copy {
+	font-size: var(--font-size-1);
+}
+
+.copy.large {
+	font-size: var(--font-size-2);
+	max-inline-size: 40ch;
+}
+
+blockquote {
+	border: none;
+	font-family: var(--font-family-heading);
+	quotes: "\201C""\201D""\2018""\2019";
+	position: relative;
+	font-size: var(--font-size-body);
+	margin: 0;
+}
+
+blockquote footer {
+	padding: 0;
+	margin-block-start: var(--space-s);
+}
+
+blockquote:before {
+	content: open-quote;
+	font-size: 7em;
+	position: absolute;
+	top: -0.8em;
+	color: var(--color-accent);
 }
 
 label {
@@ -150,13 +188,11 @@ label {
 	max-inline-size: var(--measure-body);
 	line-height: var(--line-height-body);
 	letter-spacing: var(--letters-spacing-body);
-	margin: 0;
 }
 
 .hero {
 	font-family: var(--font-family-heading);
 	max-inline-size: var(--measure-hero);
-	text-transform: uppercase;
 }
 
 .page {
@@ -202,6 +238,7 @@ small > a {
 	/* font-size: var(--font-size-title); */
 	font-weight: var(--font-weight-title, var(--font-weight-heading));
 	line-height: var(--line-height-body);
+	font-family: var(--font-family-body);
 }
 
 .card > p {

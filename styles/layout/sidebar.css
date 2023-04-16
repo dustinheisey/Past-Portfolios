@@ -1,17 +1,24 @@
-/* fixed section next to a section that fills the remaining space horizontally  */
 .sidebar {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: stretch;
+	align-items: center;
 	gap: var(--gap);
 }
 
-.sidebar > .fixed {
-	flex-grow: 1;
+.sidebar > .feature {
+	flex: 1 1 55%;
 }
 
-.sidebar > :not(.fixed) {
-	flex-basis: 0;
-	flex-grow: 999;
-	min-inline-size: 50%;
+.sidebar > :not(.feature) {
+	flex: 1 1 40%;
+}
+
+.sidebar {
+	inline-size: 100%;
+	max-inline-size: 120ch;
+}
+
+#who_has_a_plan {
+	inline-size: 100%;
+	max-inline-size: 120ch;
 }

@@ -47,125 +47,139 @@
 </head>
 
 <body>
-	<header class="cover pe-page large align-start" id="header">
-		<nav class="inline full justify-between align-baseline">
-			<a href="/index.html" class="media">
-				<svg focusable="false" class="logo" viewBox="0 0 100 245.68853462923755">
-					<use href="assets/icons.svg#logo" />
-				</svg>
-				<span class="sr-only">Logo</span>
-			</a>
-
-			<ul class="inline">
-				<li><a href="/index.html" class="navigation">Home</a></li>
-				<li><a href="/about.html" class="navigation">About</a></li>
-				<li><a href="/resume.html" class="navigation">Resume</a></li>
-				<li><a href="/services.html" class="navigation">Services</a></li>
-				<li><a href="/portfolio.html" class="navigation">Portfolio</a></li>
-			</ul>
-			<div class="inline baseline">
-				<div>
-					<input type="checkbox" id="color_mode_toggle">
-					<label for="color_mode_toggle">
-						<span class="sun">
-							<svg focusable="false" class="icon">
-								<use href="assets/icons.svg#sun" />
-							</svg>
-							<span class="sr-only">Light Mode</span>
-						</span>
-						<span class="moon">
-							<svg focusable="false" class="icon">
-								<use href="assets/icons.svg#moon" />
-							</svg>
-							<span class="sr-only">Dark Mode</span>
-						</span>
-					</label>
+	<div class="cover bg-img large align-start" id="landing_cover">
+		<header class="full">
+			<nav class="inline full justify-between align-baseline">
+				<div class="inline justify-start align-baseline gap-xl">
+					<a href="/" class="media">
+						<svg focusable="false" class="logo" viewBox="0 0 100 245.68853462923755">
+							<use href="assets/icons.svg#logo" />
+						</svg>
+						<span class="sr-only">Logo</span>
+					</a>
+					<ul class="inline">
+						<li><a href="/index" class="navigation">Home</a></li>
+						<li><a href="/about" class="navigation">About</a></li>
+						<li><a href="/resume" class="navigation">Resume</a></li>
+						<li><a href="/services" class="navigation">Services</a></li>
+						<li><a href="/portfolio" class="navigation">Portfolio</a></li>
+					</ul>
 				</div>
-				<a href="/start-a-project.html" class="btn">Start a Project</a>
-			</div>
-		</nav>
-		<section class="main">
-			<h1 class="hero">
-				<span class="color-accent">Purpose</span> Driven Web Design &amp; Development
+				<div class="inline align-baseline">
+					<a href="/start-a-project.html" class="btn">Start a Project</a>
+					<div class="bg-bg">
+						<input type="checkbox" id="color_mode_toggle">
+						<label for="color_mode_toggle">
+							<span class="sun">
+								<svg focusable="false" class="icon">
+									<use href="assets/icons.svg#sun" />
+								</svg>
+								<span class="sr-only">Light Mode</span>
+							</span>
+							<span class="moon">
+								<svg focusable="false" class="icon">
+									<use href="assets/icons.svg#moon" />
+								</svg>
+								<span class="sr-only">Dark Mode</span>
+							</span>
+						</label>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section class="main bg-dark inset-m" id="a_character">
+			<h1 class="hero color-light">
+				<span>Sustainable Web Design for Purpose-Driven Organizations
 			</h1>
-			<p>You're committed to making a difference for people and the planet. Achieve your goals with an accessible, sustainable, and user-friendly digital experience that truly reflects your mission.</p>
-			<a href="/about.html" class="btn large">About Me</a>
+			<p class="color-light">Elevate your online presence with visually appealing, accessible, and eco-friendly web design that reflects your values and increases your impact.</p>
+			<a href="/start-a-project" class="btn large color-dark bg-accent-dark">Start a Project</a>
 		</section>
-	</header>
+	</div>
 	<main>
-		<div class="inline">
-			<img class="full grow-2" src="assets/images/profile.jpeg" alt="">
-			<section class="grow-1">
-				<p class="overline">Driven by Purpose</p>
-				<h2 class="section">Hi I'm Dustin</h2>
-				<p>I'm a user centered web designer passionate about making a positive impact on the world. My design approach ensures that your website will be accessible, environmentally sustainable, and user-friendly, while effectively communicating your message and driving conversions. With years of experience and a commitment to user-centered design, I'm here to help you achieve your goals.</p>
-			</section>
-		</div>
-
-		<div class="box bg-fg">
-			<section class="stack align-center text-center">
-				<p class="overline color-accent-inverse">Accessible, Sustainable, and User-Friendly</p>
-				<h2 class="section color-bg">Services that Make an Impact</h2>
-				<p class="color-bg">I specialize in creating digital experiences that reflect your values and achieve your goals, while also being accessible to as many people and generating as little carbon as possible.</p>
-				<a href="/services.html" class="btn bg-accent-dark color-dark">View Services</a>
-			</section>
-		</div>
-
-		<section class="align-center text-center stack projects">
-			<h2 class="section">Featured Projects</h2>
-			<div class="switcher phone-down gap-l space-l">
-				<a href="https://www.vernier.com/product-category/?category=software" class="card align-stretch media">
-					<img src="assets/images/graphical-analysis-mobile-mockup.jpeg" alt="mobile mockup of graphical analysis application">
-					<div class="inset-2xs stack grow-1 align-center justify-center">
-						<p class="title">Vernier Science Education</p>
-					</div>
-				</a>
-				<a href="https://climatestrikeoregon.org/" class="card media align-stretch">
-					<img src="assets/images/climate-strike-mobile-mockup.jpeg" alt="mobile mockup of climate strike oregon website">
-					<div class="inset-2xs stack grow-1 align-center justify-center">
-						<p class="title">Climate Strike Oregon</p>
-					</div>
-				</a>
-			</div>
-			<a href="/portfolio.html" class="btn large space-l">View All Projects</a>
+		<section class="stack" id="has_a_problem">
+			<h2 class="subsection">Managing a nonprofit takes a lot of work. Managing its' web presence shouldn't have to.</h2>
+			<ul class="inline gap-xl space-l">
+				<div class="stack gap-xs">
+					<li class="inline gap-2xs">
+						<svg class="icon small color-accent">
+							<use href="assets/icons.svg#d-remove" />
+						</svg> There's too many moving parts
+					</li>
+					<li class="inline gap-2xs"><svg class="icon small color-accent">
+							<use href="assets/icons.svg#d-remove" />
+						</svg> The costs are too high</li>
+					<li class="inline gap-2xs"><svg class="icon small color-accent">
+							<use href="assets/icons.svg#d-remove" />
+						</svg> Unsatisfying results without proper integration</li>
+				</div>
+				<div class="stack gap-xs">
+					<li class="inline gap-2xs"><svg class="icon small color-accent">
+							<use href="assets/icons.svg#d-remove" />
+						</svg> You need to support a diverse population</li>
+					<li class="inline gap-2xs"><svg class="icon small color-accent">
+							<use href="assets/icons.svg#d-remove" />
+						</svg> Your users may not have reliable internet access</li>
+					<li class="inline gap-2xs"><svg class="icon small color-accent">
+							<use href="assets/icons.svg#d-remove" />
+						</svg> Finding eco-conscious designers is challenging.</li>
+				</div>
+			</ul>
 		</section>
 
-		<div>
-			<section class="stack align-center text-center">
-				<p class="overline">Testimonials</p>
-				<h2 class="section">Hear from satisfied clients</h2>
+		<div class="sidebar">
+			<div class="img-container">
+				<img src="assets/images/profile.jpeg" alt="">
+				<div class="img-bg"></div>
+			</div>
+			<section class="feature" id="and_meets_a_guide">
+				<h2 class="section">I'm Dustin Heisey</h2>
+				<p>As a passionate advocate for environmental sustainability and social welfare, as well as an expert in accessible, responsive and low carbon web design, I can help you navigate this difficult terrain.</p>
 			</section>
-			<div class="switcher align-stretch tablet-down gap-l space-l">
-				<div class="card stack justify-between">
-					<p>You've completely changed my business! You've eliminated paper from my company and given us countless hours to help our students and their families. Thank you so much!</p>
-					<div class="inline">
-						<img src="assets/images/testimonial-marsha.jpeg" alt="Marsha Mayo" class="avatar large">
-						<section>
-							<h3 class="title">Marsha Mayo</h3>
-							<p class="caption">Owner of Aerials Gymnastics</p>
-						</section>
-					</div>
-				</div>
-				<div class="card stack justify-between">
-					<p>I am beyond pleased with Dustin’s impeccable service. He was extremely attentive in understanding my business and provided very personalized help. Great designer. I 100% recommend working with him.</p>
-					<div class="inline">
-						<img src="assets/images/testimonial-jarod.jpeg" alt="Jarod Hoover" class="avatar large">
-						<section>
-							<h4 class="title">Jarod Hoover</h4>
-							<p class="caption">CEO of Hoover Honey</p>
-						</section>
-					</div>
-				</div>
+		</div>
+
+		<section class="stack align-center" id="who_has_a_plan">
+			<h2 class="section text-center">Tailored Plans for Every Client</h2>
+			<div class="switcher phone-down space-l">
+				<a href="services/branding" class="card" style="background-color: var(--color-accent-1)">
+					<h3 class=" title"><svg class="icon small">
+							<use href="assets/icons.svg#palette" />
+						</svg> Complete Branding</h3>
+					<p>I'll develop a captivating marketing story and brand guidelines, as well as a visual language that evokes powerful emotions, ensuring a memorable brand identity thats drives conversions.</p>
+				</a>
+				<a href="services/custom-web-design" class="card" style="background-color: var(--color-fg)">
+					<h3 class="title"><svg class="icon small">
+							<use href="assets/icons.svg#webpage" />
+						</svg> Custom Web Design</h3>
+					<p>I'll create a custom website that prioritizes accessibility, speed, mobile responsiveness, and sustainability. I'll craft a design system for easy scalability and lasting impact.</p>
+				</a>
+				<a href="services/website-optimization" class="card" style="background-color: var(--color-accent-2)">
+					<h3 class=" title"><svg class="icon small">
+							<use href="assets/icons.svg#camera-flash" />
+						</svg> Website Optimization</h3>
+					<p>I'll Maximize website performance, accessibility, and sustainability. I'll Enhance load times, user experience, and search visibility. I'll give your website offline support.</p>
+				</a>
+			</div>
+		</section>
+
+		<div class="sidebar">
+			<section id="and_calls_them_to_action">
+				<h2 class="section">Transform Your Online Presence</h2>
+				<p>Together we'll craft a compelling, sustainable website that resonates with your audience and amplifies the impact that only you can have.</p>
+				<a href="/start-a-project" class="btn">Start a Project</a>
+			</section>
+			<div class="img-container feature">
+				<img src="assets/images/web-development.jpeg" alt="">
+				<div class="img-bg"></div>
 			</div>
 		</div>
 
-		<div class="cover small bg-dark">
-			<section class="main">
-				<p class="overline color-accent-dark">Get in touch</p>
-				<h1 class="section color-light">Let's Make a Difference Together</h1>
-				<p class="color-light">Discuss your project with me. Tell me about your brand &amp; mission.</p>
-				<a href="/start-a-project.html" class="btn bg-accent-dark color-dark">Start a Project</a>
-			</section>
+		<div id="to_achieve_success">
+			<blockquote>
+				<p class="copy large">I am beyond pleased with Dustin’s impeccable service. He was extremely attentive in understanding my business and provided very personalized help. Great designer. I 100% recommend working with him.</p>
+				<footer class="overline">
+					- Jarod Hoover, <cite>CEO of Hoover Honey</cite>
+				</footer>
+			</blockquote>
 		</div>
 	</main>
 	<footer class="stack align-center gap-l">

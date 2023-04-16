@@ -1,49 +1,3 @@
-:root {
-	--color-light: #ffecb4;
-	--color-dark: #07372e;
-	--color-accent-dark: #e27d15;
-	--color-accent-light: #ad4a1d;
-
-	--color-fg: var(--color-dark);
-	--color-fg-inverse: var(--color-light);
-	--color-bg: var(--color-light);
-	--color-bg-inverse: var(--color-dark);
-	--color-accent: var(--color-accent-light);
-	--color-accent-inverse: var(--color-accent-dark);
-}
-
-/* Light Mode Checked - Dark X */
-html[data-theme="dark"] {
-	--color-fg: var(--color-light);
-	--color-fg-inverse: var(--color-dark);
-	--color-bg: var(--color-dark);
-	--color-bg-inverse: var(--color-light);
-	--color-accent: var(--color-accent-dark);
-	--color-accent-inverse: var(--color-accent-light);
-}
-
-@media (prefers-color-scheme: dark) {
-	/* Dark Mode Unchecked - Dark X */
-	:root {
-		--color-fg: var(--color-light);
-		--color-fg-inverse: var(--color-dark);
-		--color-bg: var(--color-dark);
-		--color-bg-inverse: var(--color-light);
-		--color-accent: var(--color-accent-dark);
-		--color-accent-inverse: var(--color-accent-light);
-	}
-
-	/* Dark Mode Checked - Light X */
-	html[data-theme="light"] {
-		--color-fg: var(--color-dark);
-		--color-fg-inverse: var(--color-light);
-		--color-bg: var(--color-light);
-		--color-bg-inverse: var(--color-dark);
-		--color-accent: var(--color-accent-light);
-		--color-accent-inverse: var(--color-accent-dark);
-	}
-}
-
 html[data-theme="dark"] .sun {
 	display: none;
 }
@@ -65,7 +19,7 @@ html[data-theme="light"] .moon {
 }
 
 body {
-	background-color: var(--color-bg);
+	background-color: var(--color-body);
 }
 
 h1,
@@ -86,7 +40,8 @@ small > a {
 	color: var(--color-accent);
 }
 
-label, .label {
+label,
+.label {
 	color: var(--color-fg);
 }
 
@@ -121,12 +76,12 @@ button {
 .icon,
 .sun,
 .moon {
-	color: var(--color-fg);
+	color: var(--text-primary);
 }
 
 input,
 textarea {
-	background-color: var(--color-fg);
-	color: var(--color-bg);
-	border-color: var(--color-bg);
+	background-color: var(--surface);
+	color: var(--text-primary);
+	border-color: var(--text);
 }

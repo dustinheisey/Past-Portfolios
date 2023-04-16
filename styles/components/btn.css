@@ -6,7 +6,7 @@
 	cursor: pointer;
 	max-inline-size: 100%;
 	border-radius: var(--radius-btn);
-	font-size: var(--font-size-btn);
+	font-size: var(--font-size-0);
 	font-weight: var(--font-weight-btn, var(--font-weight-body));
 	line-height: var(--line-height-body);
 	text-transform: var(--text-transform-btn, capitalize);
@@ -20,7 +20,7 @@
 }
 
 :is(button, .btn).large {
-	font-size: var(--font-size-btn-l);
+	font-size: var(--font-size-0);
 	padding: var(--space-2xs) var(--space-xl);
 }
 

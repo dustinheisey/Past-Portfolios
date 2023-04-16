@@ -28,7 +28,7 @@
 }
 
 .color-accent {
-	color: var(--color-accent) !important;
+	color: var(--color-accent-1) !important;
 }
 
 /* ? Background Color */
