@@ -1,0 +1,36 @@
+/* This CSS code is styling the `body` and `main` elements. It sets their display property to `flex`,
+which allows them to be arranged in a flexible layout. The `flex-direction` property is set to
+`column`, which means that the elements will be stacked vertically. The `align-items` and
+`justify-content` properties are set to `center`, which centers the elements horizontally and
+vertically. The `inline-size` property is set to `100%`, which means that the elements will take up
+the full width of their container. The `gap` property sets the spacing between the elements. */
+body,
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	inline-size: 100%;
+	gap: var(--gap-page);
+}
+
+/* The CSS code `header, footer { padding: var(--page-inset); }` is setting a padding value for the
+`header` and `footer` elements. The `var(--page-inset)` value is a CSS custom property that is
+defined elsewhere in the code. This padding will create space between the content inside the
+`header` and `footer` elements and their respective edges. */
+header,
+footer {
+	padding: var(--inset-page);
+}
+
+/* The `.region` CSS class is setting the padding, width, and maximum width of a region element. The
+`padding-inline` property sets the left and right padding of the element to the value of the
+`--page-inset` custom property. The `inline-size` property sets the width of the element to 100% of
+its container. The `max-inline-size` property sets the maximum width of the element to the value of
+the `--max-size-region` custom property. This ensures that the region element will take up the full
+width of its container, but will not exceed a certain maximum width. */
+.region {
+	padding-inline: var(--inset-page);
+	inline-size: 100%;
+	max-inline-size: var(--max-size-region);
+}

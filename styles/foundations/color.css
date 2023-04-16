@@ -1,87 +1,83 @@
-html[data-theme="dark"] .sun {
-	display: none;
+/* This is a CSS code that defines variables for different colors used in the website design. The
+`:root` selector sets the default values for these variables. The `html[data-theme="dark"]` and
+`@media (prefers-color-scheme: dark)` selectors change the values of these variables when the
+website is in dark mode or when the user's device has a dark color scheme preference. The code also
+includes some styles for toggling between light and dark mode, and for displaying icons for the
+toggle button. */
+:root {
+	--color-body: var(--color-light);
+	--color-surface: var(--color-lighter);
+	--color-text-primary: var(--color-darker);
+	--color-text-secondary: var(--color-dark);
+
+	--color-brand: var(--color-brand-light);
+	--color-brand-bg: var(--color-brand-bg);
+	--color-accent-1: var(--color-accent-1-light);
+	--color-accent-1-bg: var(--color-accent-1-bg);
+	--color-accent-2: var(--color-accent-2-light);
+	--color-accent-2-bg: var(--color-accent-2-bg);
 }
 
-html[data-theme="dark"] .moon {
-	display: initial;
+html[data-theme="dark"] {
+	--color-body: var(--color-darker);
+	--color-surface: var(--color-dark);
+	--color-text-primary: var(--color-lighter);
+	--color-text-secondary: var(--color-lighter);
+
+	--color-brand: var(--color-brand-dark);
+	--color-brand-bg: var(--color-brand-dark);
+	--color-accent-1: var(--color-accent-1-dark);
+	--color-accent-1-bg: var(--color-accent-1-dark);
+	--color-accent-2: var(--color-accent-2-dark);
+	--color-accent-2-bg: var(--color-accent-2-dark);
 }
 
-html[data-theme="light"] .sun {
-	display: initial;
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-body: var(--color-darker);
+		--color-surface: var(--color-dark);
+		--color-text-primary: var(--color-lighter);
+		--color-text-secondary: var(--color-lighter);
+
+		--color-brand: var(--color-brand-dark);
+		--color-brand-bg: var(--color-brand-dark);
+		--color-accent-1: var(--color-accent-1-dark);
+		--color-accent-1-bg: var(--color-accent-1-dark);
+		--color-accent-2: var(--color-accent-2-dark);
+		--color-accent-2-bg: var(--color-accent-2-dark);
+	}
+
+	html[data-theme="light"] {
+		--color-body: var(--color-light);
+		--color-surface: var(--color-lighter);
+		--color-text-primary: var(--color-darker);
+		--color-text-secondary: var(--color-dark);
+
+		--color-brand: var(--color-brand-light);
+		--color-brand-bg: var(--color-brand-bg);
+		--color-accent-1: var(--color-accent-1-light);
+		--color-accent-1-bg: var(--color-accent-1-bg);
+		--color-accent-2: var(--color-accent-2-light);
+		--color-accent-2-bg: var(--color-accent-2-bg);
+	}
 }
 
+/* ? Dark Mode */
+html[data-theme="dark"] .sun,
 html[data-theme="light"] .moon {
 	display: none;
+}
+
+html[data-theme="dark"] .moon,
+html[data-theme="light"] .sun {
+	display: initial;
 }
 
 #color_mode_toggle {
 	display: none;
 }
 
-body {
-	background-color: var(--color-body);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p {
-	color: var(--color-fg);
-}
-
-.overline,
-.title,
-small,
-small > a {
-	color: var(--color-accent);
-}
-
-label,
-.label {
-	color: var(--color-fg);
-}
-
-hr {
-	border: 0;
-	border-top: 1px solid var(--color-fg);
-}
-
-.btn,
-button {
-	background-color: var(--color-accent);
-	color: var(--color-fg-inverse);
-}
-
-.card {
-	background-color: var(--color-fg);
-}
-
-.card p,
-.card .caption,
-.card .icon,
-.card .subsection,
-.card li,
-.card .title {
-	color: var(--color-bg);
-}
-
-.card.media .title {
-	color: var(--color-bg);
-}
-
-.icon,
 .sun,
 .moon {
-	color: var(--text-primary);
-}
-
-input,
-textarea {
-	background-color: var(--surface);
-	color: var(--text-primary);
-	border-color: var(--text);
+	color: var(--color-text-primary);
 }

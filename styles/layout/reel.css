@@ -4,11 +4,11 @@
 	block-size: auto;
 	overflow-x: auto;
 	overflow-y: hidden;
-	gap: var(--gap);
+	gap: var(--gutter);
 }
 
 .reel::-webkit-scrollbar {
-	block-size: var(--scrollbar-size, var(--gap));
+	block-size: var(--scrollbar-size, var(--gutter));
 }
 
 .reel > * {

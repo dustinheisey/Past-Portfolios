@@ -1,0 +1,125 @@
+/* This is a CSS code block that defines a set of custom properties (also known as CSS variables) using
+the `:root` selector. These properties are used to define colors, typography, layout, rhythm, and
+border radius for a website or web application. The values for these properties are generated using
+various tools and techniques, such as color inspiration websites, type scale calculators, and
+spacing scale calculators. These custom properties can then be used throughout the CSS code to
+ensure consistency and ease of maintenance. */
+
+:root {
+	/* ? Colors 
+        Get color inspiration from https://huemint.com/, edit colors in https://palettte.app/, fix contrast issues in https://contrast-finder.tanaguru.com/ */
+	--color-darker: hsl(99deg 18% 4%);
+	--color-dark: hsl(99deg 11% 9%);
+	--color-light: hsl(99deg 12% 83%);
+	--color-lighter: hsl(99deg 71% 97%);
+
+	--color-brand-light: hsl(99deg 71% 19%);
+	--color-brand-bg: hsl(99deg 100% 75%);
+	--color-brand-dark: hsl(99deg 34% 25%);
+
+	--color-accent-1-light: hsl(19deg 83% 46%);
+	--color-accent-1-bg: hsl(19deg 100% 75%);
+	--color-accent-1-dark: hsl(19deg 67% 54%);
+
+	--color-accent-2-light: hsl(38deg 100% 49%);
+	--color-accent-2-bg: hsl(38deg 100% 75%);
+	--color-accent-2-dark: hsl(38deg 93% 59%);
+
+	/* ? Shadow Colors
+        Generate from https://www.joshwcomeau.com/shadow-palette/ based off of color hex values */
+	--color-shadow-darker: 90deg 34% 0%;
+	--color-shadow-dark: ;
+	--color-shadow-light: ;
+	--color-shadow-lighter: ;
+	--color-shadow-brand-light: ;
+	--color-shadow-brand-bg: ;
+	--color-shadow-brand-dark: ;
+	--color-shadow-accent-1-light: ;
+	--color-shadow-accent-1-bg: ;
+	--color-shadow-accent-1-dark: ;
+	--color-shadow-accent-2-light: ;
+	--color-shadow-accent-2-bg: ;
+	--color-shadow-accent-2-dark: ;
+
+	/* ? Typography 
+        Generate type scale from https://utopia.fyi/type/calculator */
+	--font-size--1: clamp(0.83rem, calc(0.97rem + -0.18vw), 0.94rem);
+	--font-size-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+	--font-size-1: clamp(1.35rem, calc(1.17rem + 0.91vw), 1.88rem);
+	--font-size-2: clamp(1.62rem, calc(1.21rem + 2.07vw), 2.81rem);
+	--font-size-3: clamp(1.94rem, calc(1.15rem + 3.96vw), 4.22rem);
+	--font-size-4: clamp(2.33rem, calc(0.94rem + 6.95vw), 6.33rem);
+	--font-size-5: clamp(2.8rem, calc(0.47rem + 11.64vw), 9.49rem);
+
+	--font-size-hero: var(--font-size-4);
+	--font-size-page: var(--font-size-4);
+	--font-size-region: var(--font-size-3);
+	--font-size-section: var(--font-size-2);
+	--font-size-title: var(--font-size-1);
+	--font-size-overline: var(--font-size-0);
+	--font-size-label: var(--font-size--1);
+	--font-size-body: var(--font-size-0);
+	--font-size-quote: var(--font-size-2);
+	--font-size-caption: var(--font-size--1);
+
+	--font-family-heading: Charter, "Bitstream Charter", "Sitka Text", Cambria,
+		serif;
+	--font-family-body: Inter, Roboto, "Helvetica Neue", "Arial Nova",
+		"Nimbus Sans", Arial, sans-serif;
+	--font-weight-heading: 700;
+	--font-weight-body: 400;
+	--font-weight-btn: 700;
+
+	--measure-heading: 25ch;
+	--measure-hero: 15ch;
+	--measure-body: 66ch;
+
+	--line-height-heading: 1.15;
+	--line-height-body: 1.5;
+
+	--letter-spacing-heading: initial;
+	--letter-spacing-body: initial;
+	--letter-spacing-overline: 0.05em;
+
+	--text-transform-btn: uppercase;
+	--text-transform-overline: uppercase;
+	--text-transform-label: uppercase;
+
+	/* ? Rythmn 
+		Tweak by manual testing */
+	--space-headline-hero: var(--space-s);
+	--space-headline-page: var(--space-s);
+	--space-headline-region: var(--space-xs);
+	--space-headline-section: var(--space-2xs);
+	--space-headline-title: var(--space-2xs);
+	--space-label: var(--space-3xs);
+	--space-overline: var(--space-3xs);
+	--space-body-text: var(--space-s);
+
+	/* ? Layout 
+        Generate spacing scale from https://utopia.fyi/space/calculator */
+	--space-3xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
+	--space-2xs: clamp(0.56rem, calc(0.54rem + 0.11vw), 0.63rem);
+	--space-xs: clamp(0.88rem, calc(0.85rem + 0.11vw), 0.94rem);
+	--space-s: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+	--space-m: clamp(1.69rem, calc(1.62rem + 0.33vw), 1.88rem);
+	--space-l: clamp(2.25rem, calc(2.16rem + 0.43vw), 2.5rem);
+	--space-xl: clamp(3.38rem, calc(3.24rem + 0.65vw), 3.75rem);
+	--space-2xl: clamp(4.5rem, calc(4.33rem + 0.87vw), 5rem);
+	--space-3xl: clamp(6.75rem, calc(6.49rem + 1.3vw), 7.5rem);
+	--space-4xl: clamp(12.38rem, calc(11.9rem + 2.39vw), 13.75rem);
+
+	--gap-page: var(--space-4xl);
+	--inset-page: var(--space-xl);
+
+	--max-size-region: 1200px;
+	--gap-region: var(--space-l);
+
+	--gutter: var(--space-s);
+
+	/* ? Border Radius
+        Generate with ChatGPT 4 */
+	--radius-s: 16px;
+	--radius-m: 20px;
+	--radius-l: 50%;
+}

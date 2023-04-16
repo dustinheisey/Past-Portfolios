@@ -1,0 +1,7 @@
+input {
+	padding: var(--space-xs);
+	border: 2px solid var(--color-text-secondary);
+	border-radius: var(--radius-s);
+	background-color: var(--color-surface);
+	color: var(--color-text-primary);
+}

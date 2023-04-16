@@ -1,0 +1,39 @@
+.color-darker {
+	color: var(--color-darker);
+}
+
+.color-dark {
+	color: var(--color-dark);
+}
+
+.color-light {
+	color: var(--color-light);
+}
+
+.color-lighter {
+	color: var(--color-lighter);
+}
+
+.color-brand {
+	color: var(--color-brand);
+}
+
+.color-brand-bg {
+	color: var(--color-brand-bg);
+}
+
+.color-accent-1 {
+	color: var(--color-accent-1);
+}
+
+.color-accent-1-bg {
+	color: var(--color-accent-1-bg);
+}
+
+.color-accent-2 {
+	color: var(--color-accent-2);
+}
+
+.color-accent-2-bg {
+	color: var(--color-accent-2-bg);
+}

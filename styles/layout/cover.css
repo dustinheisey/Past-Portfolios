@@ -5,7 +5,7 @@
 	min-block-size: 75vh;
 	inline-size: 100%;
 	align-items: center;
-	gap: var(--gap-section);
+	gap: var(--gap-region);
 }
 
 .cover > .main {
@@ -21,8 +21,4 @@
 
 .cover.small {
 	min-block-size: 75vh;
-}
-
-.cover.light > * {
-	/* color: var(--color-neutral-100); */
 }

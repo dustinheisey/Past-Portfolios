@@ -1,0 +1,10 @@
+.tag {
+	background-color: var(--color-brand-bg);
+	color: var(--color-brand);
+	border-radius: var(--radius-l);
+	font-family: var(--font-family-body);
+	font-weight: 700;
+	padding: var(--space-3xs) var(--space-xs);
+	inline-size: fit-content;
+	font-size: var(--font-size--1);
+}

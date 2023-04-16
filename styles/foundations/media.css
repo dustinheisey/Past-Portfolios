@@ -1,4 +1,0 @@
-@custom-media --tablet-up: (min-width: 40em);
-@custom-media --tablet-landscape-up: (min-width: 56em);
-@custom-media --desktop-up: (min-width: 64em);
-@custom-media --desktop-l-up: (min-width: 112em);

@@ -1,0 +1,12 @@
+/* This CSS code sets the scroll behavior of the HTML element to smooth, which means that when a user
+clicks on a link that takes them to a different part of the page, the scrolling will be animated and
+smooth instead of instant. It also sets the font size of the HTML element to 100%, which is the
+default font size. */
+html {
+	scroll-behavior: smooth;
+	font-size: 100%;
+}
+
+body {
+	background-color: var(--color-body);
+}

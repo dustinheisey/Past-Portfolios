@@ -11,7 +11,7 @@
 }
 
 .stack > * + * {
-	margin-block-start: var(--gap);
+	margin-block-start: var(--gutter);
 }
 
 .stack > .split {

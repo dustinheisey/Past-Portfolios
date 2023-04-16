@@ -1,0 +1,65 @@
+.btn,
+button {
+	background-color: var(--color-accent-1);
+	color: var(--color-fg-inverse);
+}
+
+:is(button, .btn) {
+	text-decoration: none;
+	vertical-align: baseline;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	max-inline-size: 100%;
+	border-radius: var(--radius-btn);
+	font-size: var(--font-size-0);
+	font-weight: var(--font-weight-btn, var(--font-weight-body));
+	line-height: var(--line-height-body);
+	text-transform: var(--text-transform-btn, capitalize);
+	padding: var(--space-2xs) var(--space-m);
+	border: none;
+	transition: all 0.5s ease 0s;
+}
+
+:is(button, .btn) {
+	box-shadow: var(--elevation-btn);
+}
+
+:is(button, .btn).large {
+	font-size: var(--font-size-0);
+	padding: var(--space-2xs) var(--space-xl);
+}
+
+:is(button, .btn):is(:hover, :active) {
+	/* background-color: var(--color-brand-primary);
+	border-color: var(--color-brand-primary);
+	color: var(--color-brand-muted); */
+}
+
+:is(button, .btn):hover {
+	box-shadow: var(--elevation-btn-hover);
+}
+
+:is(button, .btn):active {
+	box-shadow: var(--elevation-btn-active);
+}
+
+:is(button, .btn).secondary {
+	/* background-color: var(--color-brand-muted);
+	color: var(--color-brand-primary); */
+	box-shadow: none;
+}
+
+:is(button, .btn):is(.secondary, .tertiary):is(:hover, :active) {
+	box-shadow: none;
+}
+
+:is(button, .btn).tertiary {
+	/* background-color: transparent;
+	color: var(--color-brand-primary); */
+	box-shadow: none;
+}
+
+:is(button, .btn).tertiary:is(:hover, :active) {
+	/* background-color: var(--color-brand-muted); */
+}

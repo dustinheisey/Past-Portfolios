@@ -1,0 +1,41 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-text-primary);
+	font-family: var(--font-family-headline);
+	font-weight: var(--font-weight-headline);
+	max-inline-size: var(--measure-headline);
+	line-height: var(--line-height-headline);
+	letter-spacing: var(--letter-spacing-headline);
+	margin: 0;
+}
+
+.headline-hero {
+	max-inline-size: var(--measure-hero);
+	font-size: var(--font-size-4);
+}
+
+.headline-page {
+	font-size: var(--font-size-4);
+}
+
+.headline-section {
+	font-size: var(--font-size-3);
+}
+
+.headline-subsection {
+	font-size: var(--font-size-2);
+}
+
+.headline-title {
+	font-size: var(--font-size-0);
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	font-weight: var(--font-weight-title, var(--font-weight-headline));
+	line-height: var(--line-height-body);
+	font-family: var(--font-family-body);
+}

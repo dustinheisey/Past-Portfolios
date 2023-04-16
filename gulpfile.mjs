@@ -31,7 +31,7 @@ function processCss() {
 		"styles/layout/*.css",
 		"styles/components/*.css",
 		"styles/utils/*.css",
-		"styles/overrides.css"
+		"styles/styleguide.css"
 	])
 		.pipe(postCSS([presetEnv({ stage: 0 }), cssnano({ preset: "default" })]))
 		.pipe(concat("style.css"))

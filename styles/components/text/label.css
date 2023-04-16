@@ -1,0 +1,14 @@
+label {
+	font-size: var(--font-size-label);
+	font-weight: 400;
+	text-transform: uppercase;
+	max-inline-size: var(--measure-body);
+	line-height: var(--line-height-body);
+	letter-spacing: var(--letters-spacing-body);
+}
+
+label.required::after {
+	content: "*";
+	font-size: var(--font-size-0);
+	color: var(--color-accent-1);
+}
