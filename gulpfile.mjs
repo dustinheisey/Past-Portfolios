@@ -29,7 +29,8 @@ function processCss() {
 	return src([
 		"styles/foundations/*.css",
 		"styles/layout/*.css",
-		"styles/components/*.css",
+		"styles/components/**/*.css",
+		"styles/regions/*.css",
 		"styles/utils/*.css",
 		"styles/styleguide.css"
 	])

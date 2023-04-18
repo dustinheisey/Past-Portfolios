@@ -5,6 +5,7 @@ label {
 	max-inline-size: var(--measure-body);
 	line-height: var(--line-height-body);
 	letter-spacing: var(--letters-spacing-body);
+	font-family: var(--font-family-body);
 }
 
 label.required::after {

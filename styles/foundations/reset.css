@@ -53,6 +53,10 @@ table {
 	border-collapse: collapse;
 }
 
+body {
+	margin: 0;
+}
+
 /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
 input,
 textarea {

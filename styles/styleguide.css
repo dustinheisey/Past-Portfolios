@@ -8,38 +8,38 @@ ensure consistency and ease of maintenance. */
 :root {
 	/* ? Colors 
         Get color inspiration from https://huemint.com/, edit colors in https://palettte.app/, fix contrast issues in https://contrast-finder.tanaguru.com/ */
-	--color-darker: hsl(99deg 18% 4%);
-	--color-dark: hsl(99deg 11% 9%);
-	--color-light: hsl(99deg 12% 83%);
-	--color-lighter: hsl(99deg 71% 97%);
+	--color-darker: #11170b;
+	--color-dark: #1a2014;
+	--color-light: #f0e8dc;
+	--color-lighter: #feefe8;
 
-	--color-brand-light: hsl(99deg 71% 19%);
-	--color-brand-bg: hsl(99deg 100% 75%);
-	--color-brand-dark: hsl(99deg 34% 25%);
+	--color-brand-light: #375328;
+	--color-brand-bg: #c6ddb9;
+	--color-brand-dark: #3d5332;
 
-	--color-accent-1-light: hsl(19deg 83% 46%);
-	--color-accent-1-bg: hsl(19deg 100% 75%);
-	--color-accent-1-dark: hsl(19deg 67% 54%);
+	--color-accent-1-light: #a54b12;
+	--color-accent-1-bg: #ffdcc2;
+	--color-accent-1-dark: #995322;
 
-	--color-accent-2-light: hsl(38deg 100% 49%);
-	--color-accent-2-bg: hsl(38deg 100% 75%);
-	--color-accent-2-dark: hsl(38deg 93% 59%);
+	--color-accent-2-light: #e7b365;
+	--color-accent-2-bg: #ffe2b5;
+	--color-accent-2-dark: #e7ba77;
 
 	/* ? Shadow Colors
         Generate from https://www.joshwcomeau.com/shadow-palette/ based off of color hex values */
-	--color-shadow-darker: 90deg 34% 0%;
-	--color-shadow-dark: ;
-	--color-shadow-light: ;
-	--color-shadow-lighter: ;
-	--color-shadow-brand-light: ;
-	--color-shadow-brand-bg: ;
-	--color-shadow-brand-dark: ;
-	--color-shadow-accent-1-light: ;
-	--color-shadow-accent-1-bg: ;
-	--color-shadow-accent-1-dark: ;
-	--color-shadow-accent-2-light: ;
-	--color-shadow-accent-2-bg: ;
-	--color-shadow-accent-2-dark: ;
+	--color-shadow-darker: 90deg 59% 0%;
+	--color-shadow-dark: 90deg 38% 2%;
+	--color-shadow-light: 36deg 15% 56%;
+	--color-shadow-lighter: 20deg 29% 60%;
+	--color-shadow-brand-light: 100deg 48% 12%;
+	--color-shadow-brand-bg: 100deg 42% 55%;
+	--color-shadow-brand-dark: 100deg 34% 13%;
+	--color-shadow-accent-1-light: 24deg 98% 19%;
+	--color-shadow-accent-1-bg: 26deg 42% 55%;
+	--color-shadow-accent-1-dark: 26deg 76% 20%;
+	--color-shadow-accent-2-light: 36deg 56% 40%;
+	--color-shadow-accent-2-bg: 37deg 46% 53%;
+	--color-shadow-accent-2-dark: 36deg 50% 42%;
 
 	/* ? Typography 
         Generate type scale from https://utopia.fyi/type/calculator */
@@ -59,25 +59,25 @@ ensure consistency and ease of maintenance. */
 	--font-size-overline: var(--font-size-0);
 	--font-size-label: var(--font-size--1);
 	--font-size-body: var(--font-size-0);
-	--font-size-quote: var(--font-size-2);
+	--font-size-body-l: var(--font-size-2);
 	--font-size-caption: var(--font-size--1);
 
-	--font-family-heading: Charter, "Bitstream Charter", "Sitka Text", Cambria,
+	--font-family-headline: Charter, "Bitstream Charter", "Sitka Text", Cambria,
 		serif;
 	--font-family-body: Inter, Roboto, "Helvetica Neue", "Arial Nova",
 		"Nimbus Sans", Arial, sans-serif;
-	--font-weight-heading: 700;
+	--font-weight-headline: 700;
 	--font-weight-body: 400;
 	--font-weight-btn: 700;
 
-	--measure-heading: 25ch;
+	--measure-headline: 25ch;
 	--measure-hero: 15ch;
 	--measure-body: 66ch;
 
-	--line-height-heading: 1.15;
+	--line-height-headline: 1.15;
 	--line-height-body: 1.5;
 
-	--letter-spacing-heading: initial;
+	--letter-spacing-headline: initial;
 	--letter-spacing-body: initial;
 	--letter-spacing-overline: 0.05em;
 
@@ -94,7 +94,7 @@ ensure consistency and ease of maintenance. */
 	--space-headline-title: var(--space-2xs);
 	--space-label: var(--space-3xs);
 	--space-overline: var(--space-3xs);
-	--space-body-text: var(--space-s);
+	--space-body-text: var(--space-l);
 
 	/* ? Layout 
         Generate spacing scale from https://utopia.fyi/space/calculator */
@@ -115,7 +115,7 @@ ensure consistency and ease of maintenance. */
 	--max-size-region: 1200px;
 	--gap-region: var(--space-l);
 
-	--gutter: var(--space-s);
+	--gutter: var(--space-m);
 
 	/* ? Border Radius
         Generate with ChatGPT 4 */

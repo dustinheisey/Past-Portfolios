@@ -29,6 +29,6 @@ label + * {
 	margin-block-start: var(--space-overline);
 }
 
-p + * {
-	margin-block-start: var(--space-body-text);
+.copy:has(+ *) {
+	margin-block-end: var(--space-body-text);
 }

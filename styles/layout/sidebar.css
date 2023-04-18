@@ -15,10 +15,4 @@
 
 .sidebar {
 	inline-size: 100%;
-	max-inline-size: 120ch;
-}
-
-#who_has_a_plan {
-	inline-size: 100%;
-	max-inline-size: 120ch;
 }

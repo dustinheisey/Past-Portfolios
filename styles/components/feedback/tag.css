@@ -1,10 +1,29 @@
 .tag {
-	background-color: var(--color-brand-bg);
-	color: var(--color-brand);
-	border-radius: var(--radius-l);
+	background-color: var(--color-surface);
+	border: 2px solid var(--color-text-primary);
+	color: var(--color-text-primary);
+	border-radius: var(--radius-s);
 	font-family: var(--font-family-body);
 	font-weight: 700;
 	padding: var(--space-3xs) var(--space-xs);
 	inline-size: fit-content;
 	font-size: var(--font-size--1);
+}
+
+.tag.brand {
+	background-color: var(--color-brand-bg);
+	border-color: var(--color-brand);
+	color: var(--color-brand);
+}
+
+.tag.accent-1 {
+	background-color: var(--color-accent-1-bg);
+	border-color: var(--color-accent-1);
+	color: var(--color-accent-1);
+}
+
+.tag.accent-2 {
+	background-color: var(--color-accent-2-bg);
+	border-color: var(--color-accent-2);
+	color: var(--color-accent-2);
 }

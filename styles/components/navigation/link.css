@@ -1,10 +1,17 @@
 a {
 	transition: all 0.3s;
 	vertical-align: baseline;
+	font-family: var(--font-family-body);
 	font-size: var(--font-size-body);
 	max-inline-size: var(--measure-body);
 	line-height: var(--line-height-body);
 	letter-spacing: var(--letters-spacing-body);
+	color: var(--color-text-primary);
+}
+
+a:hover,
+a:active {
+	color: var(--color-brand);
 }
 
 .navigation {

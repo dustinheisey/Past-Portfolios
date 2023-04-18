@@ -47,29 +47,28 @@
 </head>
 
 <body>
-	<div class="cover bg-img large align-start" id="landing_cover">
-		<header class="full">
-			<nav class="inline full justify-between align-baseline">
-				<div class="inline justify-start align-baseline gap-xl">
-					<a href="/" class="media">
-						<svg focusable="false" class="logo" viewBox="0 0 100 245.68853462923755">
-							<use href="assets/icons.svg#logo" />
-						</svg>
-						<span class="sr-only">Logo</span>
-					</a>
-					<ul class="inline">
-						<li><a href="/index" class="navigation">Home</a></li>
-						<li><a href="/about" class="navigation">About</a></li>
-						<li><a href="/resume" class="navigation">Resume</a></li>
-						<li><a href="/services" class="navigation">Services</a></li>
-						<li><a href="/portfolio" class="navigation">Portfolio</a></li>
-					</ul>
-				</div>
-				<div class="inline align-baseline">
-					<a href="/start-a-project.html" class="btn">Start a Project</a>
-					<div class="bg-bg">
-						<input type="checkbox" id="color_mode_toggle">
+	<header>
+		<nav>
+			<div class="desktop-navigation">
+				<div class="inline full justify-between inset-xl region">
+					<div class="inline justify-start gap-xl">
+						<a href="/" class="media">
+							<svg focusable="false" class="logo" viewBox="0 0 100 245.68853462923755">
+								<use href="assets/icons.svg#logo" />
+							</svg>
+							<span class="sr-only">Logo</span>
+						</a>
+						<ul class="inline">
+							<li><a href="/index" class="navigation" aria-current="page">Home</a></li>
+							<li><a href="/about" class="navigation">About</a></li>
+							<li><a href="/resume" class="navigation">Resume</a></li>
+							<li><a href="/services" class="navigation">Services</a></li>
+							<li><a href="/portfolio" class="navigation">Portfolio</a></li>
+						</ul>
+					</div>
+					<div class="inline gap-s">
 						<label for="color_mode_toggle">
+							<input type="checkbox" id="color_mode_toggle">
 							<span class="sun">
 								<svg focusable="false" class="icon">
 									<use href="assets/icons.svg#sun" />
@@ -83,77 +82,148 @@
 								<span class="sr-only">Dark Mode</span>
 							</span>
 						</label>
+						<a href="/start-a-project.html" class="btn">Start a Project</a>
 					</div>
 				</div>
-			</nav>
-		</header>
-		<section class="main bg-dark inset-m" id="a_character">
-			<h1 class="hero color-light">
-				<span>Sustainable Web Design for Purpose-Driven Organizations
-			</h1>
-			<p class="color-light">Elevate your online presence with visually appealing, accessible, and eco-friendly web design that reflects your values and increases your impact.</p>
-			<a href="/start-a-project" class="btn large color-dark bg-accent-dark">Start a Project</a>
-		</section>
-	</div>
+			</div>
+			<div class="mobile-navigation">
+				<div class="topbar">
+					<a href="/" class="media">
+						<svg focusable="false" class="logo color-lighter" viewBox="0 0 100 245.68853462923755">
+							<use href="assets/icons.svg#logo" />
+						</svg>
+						<span class="sr-only">Logo</span>
+					</a>
+					<div>
+						<input type="checkbox" id="color_mode_toggle">
+						<label for="color_mode_toggle">
+							<span class="sun">
+								<svg focusable="false" class="icon color-lighter">
+									<use href="assets/icons.svg#sun" />
+								</svg>
+								<span class="sr-only">Light Mode</span>
+							</span>
+							<span class="moon">
+								<svg focusable="false" class="icon color-lighter">
+									<use href="assets/icons.svg#moon" />
+								</svg>
+								<span class="sr-only">Dark Mode</span>
+							</span>
+						</label>
+					</div>
+				</div>
+				<ul class="bottombar">
+					<li>
+						<a href="/index" aria-current="page" class="navigation">
+							<svg focusable="false" class="icon color-lighter">
+								<use href="assets/icons.svg#home" />
+							</svg>
+							<span>Home</span>
+						</a>
+					</li>
+					<li>
+						<a href="/about" class="navigation">
+							<svg focusable="false" class="icon color-lighter">
+								<use href="assets/icons.svg#about" />
+							</svg>
+							<span>About</span></a>
+					</li>
+					<li>
+						<a href="/services" class="navigation">
+							<svg focusable="false" class="icon color-lighter">
+								<use href="assets/icons.svg#webpage" />
+							</svg>
+							<span>Services</span>
+						</a>
+					</li>
+					<li>
+						<a href="/portfolio" class="navigation">
+							<svg focusable="false" class="icon color-lighter">
+								<use href="assets/icons.svg#portfolio" />
+							</svg>
+							<span>Portfolio</span></a>
+					</li>
+					<li>
+						<a href="/contact" class="navigation">
+							<svg focusable="false" class="icon color-lighter">
+								<use href="assets/icons.svg#contact" />
+							</svg>
+							<span>Contact</span></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
 	<main>
-		<section class="stack" id="has_a_problem">
-			<h2 class="subsection">Managing a nonprofit takes a lot of work. Managing its' web presence shouldn't have to.</h2>
-			<ul class="inline gap-xl space-l">
+		<div class="sidebar region" style="flex-direction: row-reverse">
+			<div class="feature"><img src="assets/images/forest-island.jpg" alt=""></div>
+			<section id="a_character">
+				<h1 class="headline-hero">
+					<span class="color-brand">Sustainable</span> Web Design for Purpose-Driven Nonprofits
+				</h1>
+				<p class="copy">You do important work for people and the planet. Elevate your online presence with a visually appealing, accessible, and eco-friendly web design that reflects your values and increases your impact.</p>
+				<a href="/start-a-project" class="btn large">Start a Project</a>
+			</section>
+		</div>
+		<section class="stack align-center region" id="has_a_problem">
+			<h2 class="headline-section text-center">Managing a nonprofit takes a lot of work. Managing its' web presence shouldn't have to.</h2>
+			<ul class="inline gap-xl align-center space-l">
 				<div class="stack gap-xs">
 					<li class="inline gap-2xs">
-						<svg class="icon small color-accent">
+						<svg class="icon small color-accent-1">
 							<use href="assets/icons.svg#d-remove" />
 						</svg> There's too many moving parts
 					</li>
-					<li class="inline gap-2xs"><svg class="icon small color-accent">
+					<li class="inline gap-2xs"><svg class="icon small color-accent-1">
 							<use href="assets/icons.svg#d-remove" />
 						</svg> The costs are too high</li>
-					<li class="inline gap-2xs"><svg class="icon small color-accent">
+					<li class="inline gap-2xs"><svg class="icon small color-accent-1">
 							<use href="assets/icons.svg#d-remove" />
-						</svg> Unsatisfying results without proper integration</li>
+						</svg> Unsatisfying results without proper expertise</li>
 				</div>
 				<div class="stack gap-xs">
-					<li class="inline gap-2xs"><svg class="icon small color-accent">
+					<li class="inline gap-2xs"><svg class="icon small color-accent-1">
 							<use href="assets/icons.svg#d-remove" />
 						</svg> You need to support a diverse population</li>
-					<li class="inline gap-2xs"><svg class="icon small color-accent">
+					<li class="inline gap-2xs"><svg class="icon small color-accent-1">
 							<use href="assets/icons.svg#d-remove" />
 						</svg> Your users may not have reliable internet access</li>
-					<li class="inline gap-2xs"><svg class="icon small color-accent">
+					<li class="inline gap-2xs"><svg class="icon small color-accent-1">
 							<use href="assets/icons.svg#d-remove" />
 						</svg> Finding eco-conscious designers is challenging.</li>
 				</div>
 			</ul>
 		</section>
 
-		<div class="sidebar">
-			<div class="img-container">
-				<img src="assets/images/profile.jpeg" alt="">
-				<div class="img-bg"></div>
+		<div class="sidebar gap-xl region">
+			<div>
+				<img class="feature" src="assets/images/profile.png" alt="">
 			</div>
-			<section class="feature" id="and_meets_a_guide">
-				<h2 class="section">I'm Dustin Heisey</h2>
+			<section id="and_meets_a_guide">
+				<p class="overline">Your eco-conscious web designer</p>
+				<h2 class="headline-region">I'm Dustin Heisey</h2>
 				<p>As a passionate advocate for environmental sustainability and social welfare, as well as an expert in accessible, responsive and low carbon web design, I can help you navigate this difficult terrain.</p>
 			</section>
 		</div>
 
-		<section class="stack align-center" id="who_has_a_plan">
-			<h2 class="section text-center">Tailored Plans for Every Client</h2>
+		<section class="stack align-center region" id="who_has_a_plan">
+			<h2 class="headline-region text-center">Tailored Plans for Every Client</h2>
 			<div class="switcher phone-down space-l">
-				<a href="services/branding" class="card" style="background-color: var(--color-accent-1)">
-					<h3 class=" title"><svg class="icon small">
+				<a href="services/branding" class="card bg-accent-1">
+					<h3 class="headline-title color-lighter"><svg class="icon small">
 							<use href="assets/icons.svg#palette" />
 						</svg> Complete Branding</h3>
-					<p>I'll develop a captivating marketing story and brand guidelines, as well as a visual language that evokes powerful emotions, ensuring a memorable brand identity thats drives conversions.</p>
+					<p class="color-lighter">I'll develop a captivating marketing story and brand guidelines, as well as a visual language that evokes powerful emotions, ensuring a memorable brand identity thats drives conversions.</p>
 				</a>
-				<a href="services/custom-web-design" class="card" style="background-color: var(--color-fg)">
-					<h3 class="title"><svg class="icon small">
+				<a href="services/custom-web-design" class="card bg-brand">
+					<h3 class="headline-title color-lighter"><svg class="icon small">
 							<use href="assets/icons.svg#webpage" />
 						</svg> Custom Web Design</h3>
-					<p>I'll create a custom website that prioritizes accessibility, speed, mobile responsiveness, and sustainability. I'll craft a design system for easy scalability and lasting impact.</p>
+					<p class="color-lighter">I'll create a custom website that prioritizes accessibility, speed, mobile responsiveness, and sustainability. I'll craft a design system for easy scalability and lasting impact.</p>
 				</a>
-				<a href="services/website-optimization" class="card" style="background-color: var(--color-accent-2)">
-					<h3 class=" title"><svg class="icon small">
+				<a href="services/website-optimization" class="card bg-accent-2">
+					<h3 class="headline-title"><svg class="icon small">
 							<use href="assets/icons.svg#camera-flash" />
 						</svg> Website Optimization</h3>
 					<p>I'll Maximize website performance, accessibility, and sustainability. I'll Enhance load times, user experience, and search visibility. I'll give your website offline support.</p>
@@ -161,19 +231,18 @@
 			</div>
 		</section>
 
-		<div class="sidebar">
+		<div class="sidebar region">
 			<section id="and_calls_them_to_action">
-				<h2 class="section">Transform Your Online Presence</h2>
-				<p>Together we'll craft a compelling, sustainable website that resonates with your audience and amplifies the impact that only you can have.</p>
+				<h2 class="headline-region">Transform Your Online Presence</h2>
+				<p class="copy">Together we'll craft a compelling, sustainable website that resonates with your audience and amplifies the impact that only you can have.</p>
 				<a href="/start-a-project" class="btn">Start a Project</a>
 			</section>
-			<div class="img-container feature">
-				<img src="assets/images/web-development.jpeg" alt="">
-				<div class="img-bg"></div>
+			<div class="feature">
+				<img src="assets/images/lush-mobile.png" alt="">
 			</div>
 		</div>
 
-		<div id="to_achieve_success">
+		<div class="region" id="to_achieve_success">
 			<blockquote>
 				<p class="copy large">I am beyond pleased with Dustin’s impeccable service. He was extremely attentive in understanding my business and provided very personalized help. Great designer. I 100% recommend working with him.</p>
 				<footer class="overline">
@@ -182,41 +251,43 @@
 			</blockquote>
 		</div>
 	</main>
-	<footer class="stack align-center gap-l">
-		<div class="inline full justify-between">
-			<a class="media" href="/index.html">
-				<svg focusable="false" class="logo" viewBox="0 0 100 245.68853462923755">
-					<use href="assets/icons.svg#logo" />
-				</svg>
-				<span class="sr-only">Logo</span>
-			</a>
-			<ul class="switcher phone-down">
-				<li><a href="/about.html" class="navigation">About</a></li>
-				<li><a href="/resume.html" class="navigation">Resume</a></li>
-				<li><a href="/services.html" class="navigation">Services</a></li>
-				<li><a href="/portfolio.html" class="navigation">Portfolio</a></li>
-				<li><a href="/start-a-project.html" class="navigation nowrap">Start a Project</a>
-				<li>
-			</ul>
-			<ul class="inline justify-end">
-				<li><a class="media" href="https://www.upwork.com/freelancers/dustinheisey">
-						<svg focusable="false" class="icon">
-							<use href="assets/icons.svg#logo-upwork" />
-						</svg>
-						<span class="sr-only">Upwork</span>
-					</a></li>
-				<li><a class="media" href="https://github.com/dustinheisey">
-						<svg focusable="false" class="icon">
-							<use href="./assets/icons.svg#logo-github" />
-						</svg>
-						<span class="sr-only">Github</span>
-					</a></li>
-			</ul>
-		</div>
-		<hr>
-		<div class="inline full justify-between">
-			<a href="https://www.websitecarbon.com/" class="tag">This page emitted just 0.13g of CO2</a>
-			<small>Copyright &copy; 2019 - 2023 <a href="/index.html" class="caption">Dustin Heisey</a></small>
+	<footer class="bg-brand">
+		<div class="region stack align-center gap-l">
+			<div class="inline full justify-between">
+				<a class="media" href="/index.html">
+					<svg focusable="false" class="logo color-lighter" viewBox="0 0 100 245.68853462923755">
+						<use href="assets/icons.svg#logo" />
+					</svg>
+					<span class="sr-only">Logo</span>
+				</a>
+				<ul class="switcher phone-down">
+					<li><a href="/about.html" class="navigation color-lighter">About</a></li>
+					<li><a href="/resume.html" class="navigation color-lighter">Resume</a></li>
+					<li><a href="/services.html" class="navigation color-lighter">Services</a></li>
+					<li><a href="/portfolio.html" class="navigation color-lighter">Portfolio</a></li>
+					<li><a href="/start-a-project.html" class="navigation color-lighter nowrap">Start a Project</a>
+					<li>
+				</ul>
+				<ul class="inline justify-end">
+					<li><a class="media" href="https://www.upwork.com/freelancers/dustinheisey">
+							<svg focusable="false" class="icon color-lighter">
+								<use href="assets/icons.svg#logo-upwork" />
+							</svg>
+							<span class="sr-only">Upwork</span>
+						</a></li>
+					<li><a class="media" href="https://github.com/dustinheisey">
+							<svg focusable="false" class="icon color-lighter">
+								<use href="./assets/icons.svg#logo-github" />
+							</svg>
+							<span class="sr-only">Github</span>
+						</a></li>
+				</ul>
+			</div>
+			<hr>
+			<div class="inline full justify-between">
+				<a href="https://www.websitecarbon.com/" class="tag brand">This page emitted just 0.13g of CO2</a>
+				<small class="color-lighter">Copyright &copy; 2019 - 2023 <a href="/index.html" class="caption color-lighter">Dustin Heisey</a></small>
+			</div>
 		</div>
 	</footer>
 	<script src="dark-mode.js"></script>

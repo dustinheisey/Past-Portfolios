@@ -15,19 +15,20 @@ h6 {
 
 .headline-hero {
 	max-inline-size: var(--measure-hero);
-	font-size: var(--font-size-4);
+	font-size: var(--font-size-3);
 }
 
 .headline-page {
 	font-size: var(--font-size-4);
 }
 
-.headline-section {
+.headline-region {
 	font-size: var(--font-size-3);
 }
 
-.headline-subsection {
+.headline-section {
 	font-size: var(--font-size-2);
+	max-inline-size: 40ch;
 }
 
 .headline-title {

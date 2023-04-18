@@ -2,8 +2,8 @@
 	font-size: var(--font-size-overline);
 	text-transform: uppercase;
 	letter-spacing: var(--letter-spacing-overline);
-	color: var(--color-accent-1, var(--color-brand));
-	font-family: var(--font-family-overline, var(--font-family-body));
+	color: var(--color-brand);
+	font-family: var(--font-family-body);
 	font-weight: var(--font-weight-overline, var(--font-weight-body));
 	line-height: var(--line-height-body);
 }

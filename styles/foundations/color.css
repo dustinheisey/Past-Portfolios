@@ -9,13 +9,20 @@ toggle button. */
 	--color-surface: var(--color-lighter);
 	--color-text-primary: var(--color-darker);
 	--color-text-secondary: var(--color-dark);
-
 	--color-brand: var(--color-brand-light);
-	--color-brand-bg: var(--color-brand-bg);
 	--color-accent-1: var(--color-accent-1-light);
-	--color-accent-1-bg: var(--color-accent-1-bg);
 	--color-accent-2: var(--color-accent-2-light);
-	--color-accent-2-bg: var(--color-accent-2-bg);
+
+	--color-shadow-body: var(--color-shadow-light);
+	--color-shadow-surface: var(--color-shadow-lighter);
+	--color-shadow-text-primary: var(--color-shadow-darker);
+	--color-shadow-text-secondary: var(--color-shadow-dark);
+	--color-shadow-brand: var(--color-shadow-brand-light);
+	--color-shadow-brand-bg: var(--color-shadow-brand-bg);
+	--color-shadow-accent-1: var(--color-shadow-accent-1-light);
+	--color-shadow-accent-1-bg: var(--color-shadow-accent-1-bg);
+	--color-shadow-accent-2: var(--color-shadow-accent-2-light);
+	--color-shadow-accent-2-bg: var(--color-shadow-accent-2-bg);
 }
 
 html[data-theme="dark"] {
@@ -54,11 +61,8 @@ html[data-theme="dark"] {
 		--color-text-secondary: var(--color-dark);
 
 		--color-brand: var(--color-brand-light);
-		--color-brand-bg: var(--color-brand-bg);
 		--color-accent-1: var(--color-accent-1-light);
-		--color-accent-1-bg: var(--color-accent-1-bg);
 		--color-accent-2: var(--color-accent-2-light);
-		--color-accent-2-bg: var(--color-accent-2-bg);
 	}
 }
 
@@ -70,7 +74,7 @@ html[data-theme="light"] .moon {
 
 html[data-theme="dark"] .moon,
 html[data-theme="light"] .sun {
-	display: initial;
+	display: flex;
 }
 
 #color_mode_toggle {

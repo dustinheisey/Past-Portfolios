@@ -9,4 +9,11 @@ html {
 
 body {
 	background-color: var(--color-body);
+	--shadow-color: var(--color-shadow-body);
+}
+
+header,
+footer,
+main {
+	inline-size: 100%;
 }

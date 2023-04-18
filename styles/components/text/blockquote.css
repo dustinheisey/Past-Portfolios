@@ -3,8 +3,12 @@ blockquote {
 	font-family: var(--font-family-heading);
 	quotes: "\201C""\201D""\2018""\2019";
 	position: relative;
-	font-size: var(--font-size-quote);
+	font-size: var(--font-size-body-l);
 	margin: 0;
+}
+
+blockquote p {
+	font-family: var(--font-family-heading);
 }
 
 blockquote footer {
@@ -14,8 +18,8 @@ blockquote footer {
 
 blockquote:before {
 	content: open-quote;
-	font-size: 7em;
+	font-size: 6.5em;
 	position: absolute;
-	top: -0.8em;
-	color: var(--color-accent-1);
+	top: -0.6em;
+	color: var(--color-brand);
 }

@@ -11,15 +11,16 @@ main {
 	align-items: center;
 	justify-content: center;
 	inline-size: 100%;
+}
+
+main {
 	gap: var(--gap-page);
 }
 
-/* The CSS code `header, footer { padding: var(--page-inset); }` is setting a padding value for the
-`header` and `footer` elements. The `var(--page-inset)` value is a CSS custom property that is
-defined elsewhere in the code. This padding will create space between the content inside the
+/* prefined elsewhere in the code. This padding will create space between the content inside the
 `header` and `footer` elements and their respective edges. */
-header,
 footer {
+	margin-block-start: var(--space-4xl);
 	padding: var(--inset-page);
 }
 

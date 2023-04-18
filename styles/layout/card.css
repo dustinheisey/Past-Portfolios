@@ -2,10 +2,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	/* background-color: var(--color-surface); */
+	background-color: var(--color-surface);
 	padding: var(--space-m);
-	border-radius: var(--radius-l);
-	box-shadow: var(--shadow-low);
+	border-radius: var(--radius-m);
+	box-shadow: var(--shadow-card);
 	max-inline-size: 66ch;
 	text-decoration: none;
 }
@@ -20,18 +20,14 @@
 }
 
 .card.media:hover {
-	box-shadow: var(--shadow-medium);
+	box-shadow: var(--shadow-card-hover);
 }
 
 .card > img {
-	border-radius: var(--radius-l) var(--radius-l) 0 0;
+	border-radius: var(--radius-m) var(--radius-m) 0 0;
 	box-shadow: none;
 }
 
 .card > .inline {
 	align-items: center;
-}
-
-.card {
-	background-color: var(--color-surface);
 }

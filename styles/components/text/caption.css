@@ -1,5 +1,6 @@
 .caption,
 small, small > a {
+    font-family: var(--font-family-body);
 	font-size: var(--font-size-caption);
-    color: var(--color-accent-1, var(--color-brand));
+    color: var(--color-text-primary);
 }
