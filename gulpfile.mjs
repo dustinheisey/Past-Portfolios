@@ -26,14 +26,18 @@ function processHtml() {
 }
 
 function processCss() {
-	return src([
-		"styles/foundations/*.css",
-		"styles/layout/*.css",
-		"styles/components/**/*.css",
-		"styles/regions/*.css",
-		"styles/utils/*.css",
-		"styles/styleguide.css"
-	])
+	return src(
+		[
+			"styles/foundations/*.css",
+			"styles/layout/*.css",
+			"styles/components/**/*.css",
+			"styles/regions/*.css",
+			"styles/utils/*.css",
+			"styles/tokens.css",
+			"styles/overrides.css"
+		],
+		{ allowEmpty: true }
+	)
 		.pipe(postCSS([presetEnv({ stage: 0 }), cssnano({ preset: "default" })]))
 		.pipe(concat("style.css"))
 		.pipe(cleanCss())

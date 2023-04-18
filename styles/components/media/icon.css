@@ -1,7 +1,4 @@
 .icon:not(.btn) {
-	display: inline-block;
-	inline-size: 1cap;
-	block-size: 1cap;
 	inline-size: 1.5em;
 	block-size: 1.5em;
 }
@@ -12,4 +9,11 @@
 
 .icon.large:not(.btn) {
 	font-size: 1.5em;
+}
+
+.with-icon {
+	display: inline-flex;
+	align-items: flex-start;
+	gap: var(--space-2xs);
+	flex-wrap: nowrap;
 }

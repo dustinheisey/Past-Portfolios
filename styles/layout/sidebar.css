@@ -6,11 +6,14 @@
 }
 
 .sidebar > .feature {
-	flex: 1 1 55%;
+	flex-grow: 2;
+	flex-shrink: 2;
 }
 
 .sidebar > :not(.feature) {
-	flex: 1 1 40%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 45%;
 }
 
 .sidebar {

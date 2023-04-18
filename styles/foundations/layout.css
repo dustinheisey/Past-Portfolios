@@ -35,3 +35,7 @@ width of its container, but will not exceed a certain maximum width. */
 	inline-size: 100%;
 	max-inline-size: var(--max-size-region);
 }
+
+.reverse {
+	flex-direction: row-reverse;
+}

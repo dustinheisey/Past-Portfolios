@@ -11,7 +11,3 @@ ul {
 .max-content {
 	inline-size: max-content;
 }
-
-ul > li {
-	max-inline-size: max-content;
-}
