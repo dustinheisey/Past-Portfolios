@@ -1,0 +1,31 @@
+/* 
+    <div class="alert" role="alert">
+        <p>Alert message goes here.</p>
+        <button class="alert__close" aria-label="Close alert"></button>
+    </div>
+*/
+
+.alert {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	background-color: #f8d7da;
+	color: #721c24;
+	border: 1px solid #f5c6cb;
+	border-radius: 0.25rem;
+}
+
+.alert__close {
+	margin-left: auto;
+	border: none;
+	background: none;
+	width: 1.5rem;
+	height: 1.5rem;
+	padding: 0;
+	color: #721c24;
+}
+
+.alert__close:hover {
+	cursor: pointer;
+	background-color: #f5c6cb;
+}

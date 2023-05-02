@@ -1,8 +1,8 @@
 textarea {
 	padding: var(--space-xs);
-	border: 2px solid var(--color-text-secondary);
+	border: 2px solid var(--color-fg-secondary);
 	border-radius: var(--radius-s);
 	resize: none;
-	background-color: var(--color-surface);
-	color: var(--color-text-primary);
+	background-color: var(--color-bg-primary);
+	color: var(--color-fg-primary);
 }

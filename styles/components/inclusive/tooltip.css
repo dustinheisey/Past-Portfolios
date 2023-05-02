@@ -1,0 +1,50 @@
+/* 
+    <button class="tooltip__trigger" aria-describedby="tooltip">Hover me</button>
+    <div class="tooltip" role="tooltip" id="tooltip" aria-hidden="true">
+        Tooltip content
+    </div>
+*/
+
+.tooltip__trigger {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	border: none;
+	border-radius: 0.25rem;
+	background-color: #0077c2;
+	color: #fff;
+	cursor: pointer;
+}
+
+.tooltip__trigger:hover + .tooltip,
+.tooltip__trigger:focus + .tooltip {
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	min-width: 10rem;
+	padding: 0.5rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	background-color: #333;
+	color: #fff;
+	border-radius: 0.25rem;
+}
+
+.tooltip__trigger:focus + .tooltip {
+	outline: none;
+}
+
+.tooltip[aria-hidden="true"] {
+	display: none;
+}

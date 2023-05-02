@@ -1,0 +1,544 @@
+:root {
+	--inset-page: var(--space-m-l);
+	--gap-page: var(--space-3xl-4xl);
+	--gap-region: var(--space-2xl);
+	--gap-section: var(--space-xs);
+	--max-inline-size-region: 1200px;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}
+
+/*? Utils */
+.justify-start {
+	justify-content: start !important;
+}
+
+.justify-end {
+	justify-content: end !important;
+}
+
+.justify-center {
+	justify-content: center !important;
+}
+
+.justify-between {
+	justify-content: space-between !important;
+}
+
+.justify-around {
+	justify-content: space-around !important;
+}
+
+.justify-evenly {
+	justify-content: space-evenly !important;
+}
+
+.justify-stretch {
+	justify-content: stretch !important;
+}
+
+.align-start {
+	align-items: start !important;
+}
+
+.align-end {
+	align-items: end !important;
+}
+
+.align-center {
+	align-items: center !important;
+}
+
+.align-stretch {
+	align-items: stretch !important;
+}
+
+.align-baseline {
+	align-items: baseline !important;
+}
+
+/** Components  */
+/*? The Theme - Theme a page area */
+header,
+footer {
+	padding: var(--inset-page);
+}
+
+footer {
+	padding-block-end: calc(var(--inset-page) + 4rem);
+}
+
+.region {
+	padding-inline: var(--inset, var(--inset-page));
+	margin-inline: auto;
+	max-inline-size: var(--max-inline-size-region);
+	inline-size: 100%;
+	--gap: var(--gap-region);
+}
+
+.region + .region {
+	padding-block: var(--inset, var(--gap-page));
+}
+
+:is(.region, .section, header, footer) > * {
+	--gap: initial;
+}
+
+/*? The Stack - Even veritcal space, lists */
+.stack {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.stack > * {
+	margin-block: 0;
+}
+
+.stack > * + * {
+	margin-block-start: var(--space-xl);
+}
+
+.stack:only-child {
+	block-size: 100%;
+}
+
+.stack > .split {
+	margin-block-end: auto;
+}
+
+/*? The Center - Center something */
+.center {
+	box-sizing: content-box;
+	margin-inline: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*? The Cluster - Horizontally laid out elements */
+.cluster {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap, var(--space-s));
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/*? The Sidebar */
+.with-sidebar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--s1);
+}
+
+.with-sidebar > :first-child {
+	flex-grow: 1;
+}
+
+.with-sidebar > :last-child {
+	flex-basis: 0;
+	flex-grow: 999;
+	min-inline-size: 50%;
+}
+
+/*? The Switcher - More flexible version of media queries */
+.switcher {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap);
+}
+
+.switcher > * {
+	flex-grow: 1;
+	flex-basis: calc((30rem - 100%) * 999);
+}
+
+/*? The Cover - “Above the fold” introductory content */
+.cover {
+	display: flex;
+	flex-direction: column;
+	min-block-size: 100vh;
+	inline-size: 100%;
+	align-items: center;
+	gap: var(--gap-region);
+	padding: var(--inset, var(--inset-page));
+}
+
+.cover > :nth-child(2),
+.cover > :only-child {
+	margin-block: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+/*? The Grid - Browsing teasers for links or products */
+.grid {
+	display: grid;
+	gap: var(--gap-section, var(--space-s));
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(min(var(--size, 250px), 100%), 1fr)
+	);
+}
+
+.grid > * {
+	align-items: stretch;
+	margin: 0;
+}
+
+.col-2 {
+	--size: 500px;
+}
+
+.col-3 {
+	--size: 325px;
+}
+
+.col-4 {
+	--size: 250px;
+}
+
+.col-5 {
+	--size: 200px;
+}
+
+.col-6 {
+	--size: 150px;
+}
+
+/*? The Frame - Cropping media (videos and images) to a desired aspect ratio */
+.frame {
+	aspect-ratio: 3/2;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.frame.square {
+	aspect-ratio: 1/1;
+}
+
+.frame.photo {
+	aspect-ratio: 3/2;
+}
+
+.frame.video {
+	aspect-ratio: 16/9;
+}
+
+.frame > img,
+.frame > video {
+	inline-size: 100%;
+	block-size: 100%;
+	object-fit: cover;
+}
+
+@media (orientation: "portrait") {
+	.frame {
+		aspect-ratio: 1/1;
+	}
+}
+
+/*? The Reel - Carousel, Mobile Navigation Sausage Links */
+.reel {
+	display: flex;
+	block-size: auto;
+	overflow-x: auto;
+	overflow-y: hidden;
+	gap: var(--gap-section, var(--space-s));
+	/* scrollbar-color: #fff #000; */
+}
+
+.reel::-webkit-scrollbar {
+	block-size: 1rem;
+}
+
+.reel::-webkit-scrollbar-track {
+	/* background-color: #000; */
+}
+
+.reel::-webkit-scrollbar-thumb {
+	/* background-color: #000; */
+	/* background-image: linear-gradient(
+		#000 0,
+		#000 0.25rem,
+		#fff 0.25rem,
+		#fff 0.75rem,
+		#000 0.75rem
+	); */
+}
+
+.reel > * {
+	flex: 0 0 auto;
+}
+
+.reel > img {
+	block-size: 100%;
+	inline-size: auto;
+	flex-basis: auto;
+}
+
+/*? The Imposter */
+.imposter {
+	position: absolute;
+	inset-block-start: 50%;
+	inset-inline-start: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.imposter.contain {
+	--margin: 0px;
+	overflow: auto;
+	max-inline-size: calc(100% - (var(--margin) * 2));
+	max-block-size: calc(100% - (var(--margin) * 2));
+}
+
+/*? The Masonry - Product galleries, testimonials, blog posts, portfolio items */
+/* Masonry style grid */
+.masonry {
+	gap: var(--gutter);
+}
+
+.masonry.col-2 {
+	columns: 2;
+}
+
+.masonry.col-3 {
+	columns: 3;
+}
+
+.masonry.col-4 {
+	columns: 4;
+}
+
+.masonry.col-5 {
+	columns: 5;
+}
+
+.masonry.col-6 {
+	columns: 6;
+}
+
+.masonry > * + * {
+	margin-block-start: var(--gutter);
+	break-inside: avoid;
+}
+
+/*? The List  */
+ol,
+ul {
+	columns: 2;
+	column-gap: var(--gutter);
+}
+
+li {
+	column-span: all;
+}
+
+li:nth-last-child(n + 3),
+li:nth-last-child(n + 3) ~ * {
+	column-span: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.nowrap > * {
+	white-space: nowrap;
+}
+
+.max-content {
+	inline-size: max-content;
+}
+
+/*? The Split-Screen - Divide the screen into two equal or unequal parts */
+.split-screen {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--gap, var(--gap-region));
+}
+
+.split-screen.start {
+	/* flex-direction: row-reverse; */
+}
+
+.split-screen > * {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 40%;
+}
+
+.split-screen.start > :first-child {
+	flex-grow: 2;
+	flex-shrink: 2;
+	flex-basis: 50%;
+}
+
+.split-screen.start > :last-child {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 40%;
+}
+
+.split-screen.end > :first-child {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 40%;
+}
+
+.split-screen.end > :last-child {
+	flex-grow: 2;
+	flex-shrink: 2;
+	flex-basis: 50%;
+}
+
+/*? The Card - Showcase products, services, blog posts, or other types of content  */
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: var(--color-bg, var(--color-bg-primary));
+	border: var(--border-thin) solid;
+	padding: var(--space-m);
+	border-radius: var(--radius-m);
+	box-shadow: var(--shadow-card);
+	max-inline-size: 66ch;
+	text-decoration: none;
+	border: 2px solid var(--color-bg-secondary-text);
+}
+
+.card > p {
+	margin-block-end: 0;
+}
+
+.card.media {
+	padding: 0;
+	transition: all 0.3s;
+}
+
+.card.media:hover {
+	box-shadow: var(--shadow-card-hover);
+}
+
+.card > img {
+	border-radius: var(--radius-m) var(--radius-m) 0 0;
+	box-shadow: none;
+}
+
+.card > .inline {
+	align-items: center;
+}
+
+/*? The Dropdown - Dropdown on hover */
+
+/*? The Tooltip - Tooltip on hover */
+
+/*? The Details - Details on click */
+
+/*? The Navigation - Mobile/Desktop navigation  */
+.mobile-navigation {
+	display: none;
+}
+
+.desktop-navigation {
+	display: flex;
+	justify-content: center;
+}
+
+.desktop-navigation .navigation[aria-current="page"] {
+	color: var(--primary-ui);
+	background-size: 100% 2px;
+	background-position-x: left;
+}
+
+@media (max-width: 767px) {
+	.desktop-navigation {
+		display: none;
+	}
+
+	.mobile-navigation {
+		display: block;
+	}
+	main {
+		margin-block-start: calc(4rem + var(--space-m));
+	}
+
+	header {
+		padding: 0 !important;
+	}
+
+	.topbar {
+		block-size: 4rem;
+		padding-inline: var(--space-s);
+		inline-size: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		border-block-end: 1px solid var(--grey);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		z-index: 1;
+	}
+
+	.bottombar {
+		inline-size: 100%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		align-items: stretch;
+		justify-content: space-around;
+		z-index: 1;
+		border-block-start: 1px solid var(--grey);
+	}
+
+	.bottombar > * {
+		min-inline-size: 44px;
+		min-block-size: 44px;
+	}
+
+	.bottombar > li {
+		flex: 1;
+	}
+
+	.bottombar svg {
+		inline-size: 20px !important;
+		block-size: 20px !important;
+	}
+
+	.bottombar a {
+		padding-block: 12px;
+		inline-size: 100%;
+		block-size: 100%;
+		gap: 4px !important;
+		font-size: var(--font-size--2) !important;
+		font-weight: 700;
+	}
+
+	.navigation[aria-current="page"] {
+		--headline-color: var(--primary-ui) !important;
+	}
+
+	.navigation {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--space-3xs);
+		font-size: var(--font-size--1);
+		position: relative;
+		inline-size: max-content;
+	}
+}

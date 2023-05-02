@@ -1,0 +1,64 @@
+/* 
+    <div class="carousel">
+        <div class="carousel__slides">
+            <div class="carousel__slide">
+                <img src="image-1.jpg" alt="Image 1">
+            </div>
+            <div class="carousel__slide">
+                <img src="image-2.jpg" alt="Image 2">
+            </div>
+            <div class="carousel__slide">
+                <img src="image-3.jpg" alt="Image 3">
+            </div>
+        </div>
+        <button class="carousel__prev" aria-label="Previous slide"></button>
+        <button class="carousel__next" aria-label="Next slide"></button>
+    </div>
+*/
+
+.carousel {
+	position: relative;
+}
+
+.carousel__slides {
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+	flex-shrink: 0;
+	scroll-snap-align: center;
+}
+
+.carousel__slide img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.carousel__prev,
+.carousel__next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #333;
+	font-size: 1.5rem;
+	line-height: 1;
+	text-align: center;
+	cursor: pointer;
+}
+
+.carousel__prev {
+	left: 1rem;
+}
+
+.carousel__next {
+	right: 1rem;
+}

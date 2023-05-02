@@ -1,0 +1,26 @@
+/* This is a CSS code block that defines custom properties (also known as CSS variables) for various
+radius values used in the design of a website or application. The `:root` selector is used to define
+these variables globally, so they can be accessed and used throughout the entire document. The
+values assigned to these variables are based on other custom properties defined elsewhere in the CSS
+code, such as `--radius-s`, `--radius-m`, and `--radius-l`. By using custom properties, it becomes
+easier to make global changes to the design by simply updating the values of these variables. */
+:root {
+	--radius-s: 16px;
+	--radius-m: 20px;
+	--radius-l: 50%;
+
+	--radius-btn: var(--radius-s);
+	--radius-input: var(--radius-s);
+	--radius-tag: var(--radius-s);
+
+	--radius-card: var(--radius-m);
+	--radius-tooltip: var(--radius-m);
+	--radius-dialog: var(--radius-m);
+
+	--radius-avatar: var(--radius-l);
+	--radius-floating-action-btn: var(--radius-l);
+}
+
+.full {
+	inline-size: 100%;
+}

@@ -1,0 +1,253 @@
+/* 
+    <form class="form">
+        <div class="form__group">
+            <label for="name" class="form__label">Name</label>
+            <input type="text" id="name" class="form__input" required>
+        </div>
+        <div class="form__group">
+            <label for="email" class="form__label">Email</label>
+            <input type="email" id="email" class="form__input" required>
+        </div>
+        <div class="form__group">
+            <button type="submit" class="form__submit">Submit</button>
+        </div>
+    </form>
+*/
+
+form {
+	inline-size: 100%;
+}
+
+/* .form-group__label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #333;
+} */
+
+.form-group {
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2xs);
+}
+
+.form-group__radio,
+.form-group__range-values {
+	display: block;
+}
+
+.form-group__fieldset {
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
+	padding: 0;
+	border: none;
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3xs);
+}
+
+.form-group__radio {
+	margin: 0.25rem 0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+	color: var(--fg-secondary);
+}
+
+.form-group__radio input[type="radio"] {
+	margin-right: 0.5rem;
+}
+
+.form-group__range-values {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1;
+	color: var(--fg-secondary);
+}
+
+.form-group__range-container {
+	display: flex;
+	align-items: center;
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.form-group__range-input {
+	flex: 1;
+	margin-right: 0.5rem;
+}
+
+output {
+	font-family: var(--font-family-body-text);
+	font-size: var(--font-size--1);
+	color: var(--bg-primary);
+	display: inline-block;
+	position: relative;
+	line-height: 1.5;
+	text-align: center;
+	border-radius: 5px;
+	background: var(--primary-ui);
+	padding: var(--space-3xs) var(--space-2xs);
+	margin-inline-start: var(--space-xs);
+}
+
+.form-group__fieldset {
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
+	padding: 0;
+	border: none;
+}
+
+.form-group__radio-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.form-group__radio-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: calc(25% - 1rem);
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border: 1px solid var(--grey);
+	border-radius: 0.25rem;
+	cursor: pointer;
+	background-color: var(--bg-primary);
+	transition: border-color 0.2s ease-in-out;
+}
+
+.form-group__radio-card:hover,
+.form-group__radio-card:has(input[type="checkbox"]:checked) {
+	background-color: var(--primary-ui);
+	color: var(--bg-primary);
+}
+
+:is(
+		.form-group__radio-card:hover,
+		.form-group__radio-card:has(input[type="checkbox"]:checked)
+	)
+	:is(p, svg) {
+	color: var(--bg-primary);
+}
+
+.form-group__radio-card input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.form-group__radio-icon {
+	margin-bottom: 0.5rem;
+	font-size: 2rem;
+	color: #0077c2;
+}
+
+.form-group__radio-label {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+	color: #333;
+	text-align: center;
+}
+
+.range-slider {
+	margin: 60px 0 0 0;
+}
+
+.range-slider {
+	width: 100%;
+}
+
+.form-group__range-input {
+	-webkit-appearance: none;
+	width: calc(100% - (73px));
+	height: 10px;
+	border-radius: 5px;
+	background: var(--color-bg-primary);
+	outline: none;
+	padding: 0;
+	margin: 0;
+}
+.form-group__range-input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: var(--primary-ui);
+	cursor: pointer;
+	-webkit-transition: background 0.15s ease-in-out;
+	transition: background 0.15s ease-in-out;
+}
+.form-group__range-input::-webkit-slider-thumb:hover {
+	background: var(--primary-ui);
+}
+.form-group__range-input:active::-webkit-slider-thumb {
+	background: var(--primary-ui);
+}
+.form-group__range-input::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border: 0;
+	border-radius: 50%;
+	background: var(--primary-ui);
+	cursor: pointer;
+	-moz-transition: background 0.15s ease-in-out;
+	transition: background 0.15s ease-in-out;
+}
+.form-group__range-input::-moz-range-thumb:hover {
+	background: var(--primary-ui);
+}
+.form-group__range-input:active::-moz-range-thumb {
+	background: var(--primary-ui);
+}
+.form-group__range-input:focus::-webkit-slider-thumb {
+	box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--primary-ui);
+}
+
+::-moz-range-track {
+	background: var(--color-bg-primary);
+	border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+	border: 0;
+}
+
+main {
+	margin-block: var(--space-3xl) !important;
+}
+
+form {
+	max-inline-size: 1200px;
+}
+
+input,
+textarea {
+	background: #fff !important;
+	display: block;
+	inline-size: 100%;
+	padding: var(--space-xs);
+	border: 1px solid var(--grey) !important;
+	border-radius: var(--radius-s) !important;
+	background-color: var(--bg-primary);
+	color: var(--fg-primary);
+}
+
+legend {
+	margin-block-end: var(--space-2xs);
+}
+
+.overline {
+	color: var(--primary-text) !important;
+}

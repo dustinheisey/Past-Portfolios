@@ -1,0 +1,83 @@
+/* 
+    <div class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox">Checkbox label</label>
+    </div>
+*/
+
+/* 
+Accordions
+Alerts
+Breadcrumbs
+Buttons
+Carousels
+Charts
+Checkboxes
+Dialogs
+Dropdowns
+Forms
+Menus
+Modals
+Navigation
+Pagination
+Radio buttons
+Range inputs
+Select menus
+Sliders
+Spinbuttons
+Tables
+Tabs
+Toggles
+Tooltips
+Typeahead
+*/
+
+
+
+.checkbox > input {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.checkbox > label {
+	display: inline-block;
+	padding-left: 2rem;
+	position: relative;
+	cursor: pointer;
+}
+
+.checkbox > label:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 2px solid #333;
+	border-radius: 0.25rem;
+}
+
+.checkbox > input:checked + label:before {
+	background-color: #0077c2;
+	border-color: #0077c2;
+}
+
+.checkbox > label:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 0.5rem;
+	top: 0.5rem;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 0.125rem;
+	background-color: #fff;
+	transform: scale(0);
+	transition: transform 0.1s ease-in-out;
+}
+
+.checkbox > input:checked + label:after {
+	transform: scale(1);
+}

@@ -1,0 +1,54 @@
+/* 
+    <div class="accordion">
+        <button class="accordion__button" aria-expanded="false" aria-controls="accordion-panel1">Accordion panel 1</button>
+        <div class="accordion__panel" id="accordion-panel1" hidden>
+            <p>Accordion panel 1 content</p>
+        </div>
+        <button class="accordion__button" aria-expanded="false" aria-controls="accordion-panel2">Accordion panel 2</button>
+        <div class="accordion__panel" id="accordion-panel2" hidden>
+            <p>Accordion panel 2 content</p>
+        </div>
+        <button class="accordion__button" aria-expanded="false" aria-controls="accordion-panel3">Accordion panel 3</button>
+        <div class="accordion__panel" id="accordion-panel3" hidden>
+            <p>Accordion panel 3 content</p>
+        </div>
+    </div>
+*/
+
+.accordion__button {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1;
+	text-align: left;
+	text-decoration: none;
+	white-space: nowrap;
+	background-color: #fff;
+	color: #333;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+	cursor: pointer;
+}
+
+.accordion__button:focus {
+	outline: none;
+	border-color: #0077c2;
+}
+
+.accordion__button[aria-expanded="true"] {
+	background-color: #0077c2;
+	color: #fff;
+}
+
+.accordion__panel {
+	margin-top: 0.5rem;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+}

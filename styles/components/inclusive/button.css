@@ -1,0 +1,29 @@
+/* 
+    <button class="button" type="button">Button Text</button>
+*/
+
+.button {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	border: none;
+	border-radius: 0.25rem;
+	background-color: #0077c2;
+	color: #fff;
+	cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+	background-color: #005ea6;
+	outline: none;
+}
+
+.button:active {
+	background-color: #004d91;
+}

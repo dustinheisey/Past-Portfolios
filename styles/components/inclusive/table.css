@@ -1,0 +1,79 @@
+/* 
+    <table class="table">
+        <caption class="table__caption">List of items</caption>
+        <thead class="table__header">
+            <tr class="table__row">
+            <th class="table__header-cell">Item name</th>
+            <th class="table__header-cell">Price</th>
+            <th class="table__header-cell">Quantity</th>
+            <th class="table__header-cell">Total</th>
+            </tr>
+        </thead>
+        <tbody class="table__body">
+            <tr class="table__row">
+            <td class="table__cell">Item 1</td>
+            <td class="table__cell">$10.00</td>
+            <td class="table__cell">2</td>
+            <td class="table__cell">$20.00</td>
+            </tr>
+            <tr class="table__row">
+            <td class="table__cell">Item 2</td>
+            <td class="table__cell">$15.00</td>
+            <td class="table__cell">1</td>
+            <td class="table__cell">$15.00</td>
+            </tr>
+            <tr class="table__row">
+            <td class="table__cell">Item 3</td>
+            <td class="table__cell">$8.00</td>
+            <td class="table__cell">4</td>
+            <td class="table__cell">$32.00</td>
+            </tr>
+        </tbody>
+        <tfoot class="table__footer">
+            <tr class="table__row">
+            <td class="table__cell" colspan="3"></td>
+            <td class="table__cell">$67.00</td>
+            </tr>
+        </tfoot>
+    </table>
+*/
+
+.table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.table__caption {
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+	font-weight: 700;
+	text-align: left;
+}
+
+.table__header {
+	background-color: #f5f5f5;
+}
+
+.table__row {
+	border-bottom: 1px solid #ccc;
+}
+
+.table__header-cell,
+.table__cell {
+	padding: 0.5rem;
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: left;
+}
+
+.table__header-cell {
+	font-weight: 700;
+}
+
+.table__cell {
+	vertical-align: middle;
+}
+
+.table__footer {
+	font-weight: 700;
+}

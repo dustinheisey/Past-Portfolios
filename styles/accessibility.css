@@ -1,0 +1,35 @@
+:focus {
+  outline: 2px solid var(--primary-ui);
+  outline-offset: 6px;
+  border-radius: var(--radius-s);
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+::-moz-selection {
+  background: var(--primary-ui);
+  color: var(--color-bg-primary);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--primary-ui);
+  color: var(--color-bg-primary);
+  text-shadow: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+[hidden] {
+  display: none !important;
+}

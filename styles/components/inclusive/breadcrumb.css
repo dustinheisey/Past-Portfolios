@@ -1,0 +1,34 @@
+/* 
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb__item"><a href="#">Home</a></li>
+            <li class="breadcrumb__item"><a href="#">Section</a></li>
+            <li class="breadcrumb__item active" aria-current="page">Subsection</li>
+        </ol>
+    </nav>
+*/
+
+.breadcrumb {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.breadcrumb__item {
+	margin-right: 0.5rem;
+}
+
+.breadcrumb__item:last-child {
+	margin-right: 0;
+}
+
+.breadcrumb__item a {
+	text-decoration: none;
+	color: #0077c2;
+}
+
+.breadcrumb__item.active {
+	color: #333;
+}

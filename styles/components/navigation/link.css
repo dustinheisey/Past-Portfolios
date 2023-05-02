@@ -1,17 +1,17 @@
-a {
+a:not(.btn) {
 	transition: all 0.3s;
 	vertical-align: baseline;
-	font-family: var(--font-family-body);
-	font-size: var(--font-size-body);
-	max-inline-size: var(--measure-body);
-	line-height: var(--line-height-body);
-	letter-spacing: var(--letters-spacing-body);
-	color: var(--color-text-primary);
+	font-family: var(--font-family-body-text);
+	font-size: var(--font-size-body-text);
+	max-inline-size: var(--measure-body-text);
+	line-height: var(--line-height-body-text);
+	letter-spacing: var(--letters-spacing-body-text);
+	color: var(--color-fg-primary);
 }
 
-a:hover,
-a:active {
-	color: var(--color-brand);
+a:not(.btn):hover,
+a:not(.btn):active {
+	color: var(--primary);
 }
 
 .navigation {

@@ -48,148 +48,246 @@
 
 <body>
 	<header>
-		<nav class="inline full justify-between align-baseline">
-			<a href="/index.html" class="media">
-				<svg focusable="false" class="logo" viewBox="0 0 100 245.68853462923755">
-					<use href="assets/icons.svg#logo" />
-				</svg>
-				<span class="sr-only">Logo</span>
-			</a>
-			<ul class="reel">
-				<li><a href="/index.html" class="navigation">Home</a></li>
-				<li><a href="/about.html" class="navigation">About</a></li>
-				<li><a href="/resume.html" class="navigation">Resume</a></li>
-				<li><a href="/services.html" class="navigation">Services</a></li>
-				<li><a href="/portfolio.html" class="navigation">Portfolio</a></li>
-			</ul>
-			<div class="inline baseline">
-				<div>
-					<input type="checkbox" id="color_mode_toggle">
-					<label for="color_mode_toggle">
-						<span class="sun">
-							<svg focusable="false" class="icon">
-								<use href="assets/icons.svg#sun" />
-							</svg>
-							<span class="sr-only">Light Mode</span>
-						</span>
-						<span class="moon">
-							<svg focusable="false" class="icon">
-								<use href="assets/icons.svg#moon" />
-							</svg>
-							<span class="sr-only">Dark Mode"</span>
-						</span>
-					</label>
+		<nav>
+			<div class="desktop-navigation">
+				<div class="cluster full justify-between region" gap="m" inset="xl">
+					<a href="/" class="media">
+						<svg focusable="false" class="logo" viewBox="0 0 100 245.68853462923755">
+							<use href="assets/icons.svg#logo" />
+						</svg>
+						<span class="sr-only">Logo</span>
+					</a>
+					<ul class="cluster">
+						<li><a href="/index" class="navigation">Home</a></li>
+						<li><a href="/about" class="navigation">About</a></li>
+						<li><a href="/resume" class="navigation">Resume</a></li>
+						<li><a href="/services" class="navigation">Services</a></li>
+						<li><a href="/portfolio" class="navigation">Portfolio</a></li>
+					</ul>
+					<div class="cluster" gap="s">
+						<label for="color_mode_toggle">
+							<input type="checkbox" id="color_mode_toggle">
+							<span class="sun">
+								<svg focusable="false" class="icon">
+									<use href="assets/icons.svg#sun" />
+								</svg>
+								<span class="sr-only">Light Mode</span>
+							</span>
+							<span class="moon">
+								<svg focusable="false" class="icon">
+									<use href="assets/icons.svg#moon" />
+								</svg>
+								<span class="sr-only">Dark Mode</span>
+							</span>
+						</label>
+						<a href="/start-a-project.html" class="btn">Start a Project</a>
+					</div>
 				</div>
-				<a href="/start-a-project.html" class="btn">Start a Project</a>
+			</div>
+			<div class="mobile-navigation">
+				<div class="topbar" theme="surface">
+					<a href="/" class="media">
+						<svg focusable="false" class="logo" viewBox="0 0 100 245.68853462923755">
+							<use href="assets/icons.svg#logo" />
+						</svg>
+						<span class="sr-only">Logo</span>
+					</a>
+					<div>
+						<input type="checkbox" id="color_mode_toggle">
+						<label for="color_mode_toggle">
+							<span class="sun">
+								<svg focusable="false" class="icon">
+									<use href="assets/icons.svg#sun" />
+								</svg>
+								<span class="sr-only">Light Mode</span>
+							</span>
+							<span class="moon">
+								<svg focusable="false" class="icon">
+									<use href="assets/icons.svg#moon" />
+								</svg>
+								<span class="sr-only">Dark Mode</span>
+							</span>
+						</label>
+					</div>
+				</div>
+				<ul class="bottombar" theme="surface">
+					<li>
+						<a href="/index" class="navigation">
+							<svg focusable="false" class="icon">
+								<use href="assets/icons.svg#home" />
+							</svg>
+							<span>Home</span>
+						</a>
+					</li>
+					<li>
+						<a href="/about" class="navigation">
+							<svg focusable="false" class="icon">
+								<use href="assets/icons.svg#profile" />
+							</svg>
+							<span>About</span>
+						</a>
+					</li>
+					<li>
+						<a href="/services" class="navigation">
+							<svg focusable="false" class="icon">
+								<use href="assets/icons.svg#webpage" />
+							</svg>
+							<span>Services</span>
+						</a>
+					</li>
+					<li>
+						<a href="/portfolio" class="navigation">
+							<svg focusable="false" class="icon">
+								<use href="assets/icons.svg#portfolio" />
+							</svg>
+							<span>Portfolio</span>
+						</a>
+					</li>
+					<li>
+						<a href="/contact" aria-current="page" class="navigation">
+							<svg focusable="false" class="icon">
+								<use href="assets/icons.svg#contact" />
+							</svg>
+							<span>Contact</span>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 	</header>
 	<main>
-		<div class="pe-page stack align-center">
-			<div>
+		<div class="split-screen region start">
+			<div class="pe-page stack align-start stack">
 				<section>
-					<h2 class="section">Apply to Work With Me</h2>
+					<p class="overline">Overline Text</p>
+					<h2 class="region-headline">Apply to Work With Me</h2>
 					<p>Fill out the application below, and let's make a difference together.</p>
 				</section>
-
-				<form class="stack align-stretch gap-l space-l" autocomplete="on" name="applications" data-netlify="true">
-
-					<div class="stack align-stretch">
-						<label class="label" for="name">Full Name <span class="required">&ast;</span></label>
-						<input class="bg-light" name="name" id="name" type="text">
+				<form action="#" method="post" class="contact-form" autocomplete="on" name="applications" data-netlify="true">
+					<div class="form-group">
+						<label for="name" class="form-group__label required">Full Name</label>
+						<input type="text" id="name" name="name" class="form-group__input" placeholder="Enter your full name" required>
 					</div>
-
-					<div class="stack align-stretch">
-						<label class="label" for="email">Email <span class="required">&ast;</span></label>
-						<input class="bg-light" name="email" id="email" type="email">
+					<div class="form-group">
+						<label for="email" class="form-group__label required">Email</label>
+						<input type="email" id="email" name="email" class="form-group__input" placeholder="Enter your email" required>
 					</div>
-
-					<div class="stack align-stretch">
-						<label class="label" for="message">Describe Your Organization</label>
-						<textarea class="bg-light" id="message" name="message"></textarea>
+					<div class="form-group">
+						<label for="organization" class="form-group__label">Describe Your Organization</label>
+						<textarea id="organization" name="organization" class="form-group__textarea" placeholder="Enter a description of your organization" rows="4" required></textarea>
 					</div>
-
-					<div class="switcher align-start">
-						<fieldset class="stack">
-							<legend class="label nowrap">Organization Type <span class="required">&ast;</span></legend>
-							<label class="space-xs">
-								<input class="bg-light" id="business" name="organization_type" type="radio">
-								Business
-							</label>
-
-							<label class="nowrap"><input class="bg-light" id="nonprofit" name="organization_type" type="radio"> Nonprofit</label>
+					<div class="form-group">
+						<fieldset class="form-group__fieldset">
+							<legend class="form-group__label required">Services Needed</legend>
+							<div class="grid form-group__radio-group" gap="3xs">
+								<label for="branding" class="form-group__radio-card">
+									<input type="checkbox" id="branding" name="services" value="branding" required>
+									<span class="form-group__radio-icon">
+										<svg class="icon">
+											<use href="./assets/icons.svg#palette" />
+										</svg>
+									</span>
+									<p class="form-group__radio-label">Brand Development & Strategy</p>
+								</label>
+								<label for="web-design" class="form-group__radio-card">
+									<input type="checkbox" id="web-design" name="services" value="web-design" required>
+									<span class="form-group__radio-icon">
+										<svg class="icon">
+											<use href="./assets/icons.svg#webpage" />
+										</svg>
+									</span>
+									<p class="form-group__radio-label">Custom Web Design &amp; Development</p>
+								</label>
+								<label for="website-optimization" class="form-group__radio-card">
+									<input type="checkbox" id="website-optimization" name="services" value="website-optimization" required>
+									<span class="form-group__radio-icon">
+										<svg class="icon">
+											<use href="./assets/icons.svg#camera-flash" />
+										</svg>
+									</span>
+									<p class="form-group__radio-label">Website Optimization &amp; Maintenance</p>
+								</label>
+								<label for="not-sure" class="form-group__radio-card">
+									<input type="checkbox" id="not-sure" name="services" value="not-sure" required>
+									<span class="form-group__radio-icon">
+										<svg class="icon">
+											<use href="./assets/icons.svg#question" />
+										</svg>
+									</span>
+									<p class="form-group__radio-label">Help Me Decide</p>
+								</label>
+							</div>
 						</fieldset>
-
-						<fieldset class="stack">
-							<legend class="label">Services Needed <span class="required">&ast;</span></legend>
-
-							<label class="space-xs nowrap"><input class="bg-light" id="branding" name="services_needed" type="checkbox"> Branding</label>
-
-							<label class="nowrap"><input class="bg-light" id="website_design_development" name="services_needed" type="checkbox"> Web Design &amp; Development</label>
-
-							<label class="nowrap"><input class="bg-light" id="website_optimization" name="services_needed" type="checkbox"> Website Optimization</label>
-
-							<label class="nowrap"><input class="bg-light" id="not_sure" name="services_needed" type="checkbox"> I'm Not Sure Yet</label>
-						</fieldset>
-
-						<fieldset class="stack">
-							<legend class="label">Budget <span class="required">&ast;</span></legend>
-							<label class="space-xs nowrap"><input class="bg-light" id="1000_under" name="budget" type="radio"> $1000 &amp; under</label>
-
-							<label class="nowrap"><input class="bg-light" id="2000-5000" name="budget" type="radio"> $2000 - $5000</label>
-
-							<label class="nowrap"><input class="bg-light" id="5000-10000" name="budget" type="radio"> $5000 - $10,000</label>
-
-							<label class="nowrap"><input class="bg-light" id="10000_up" name="budget" type="radio"> $10,000 &amp; up</label>
-						</fieldset>
 					</div>
-
-					<button class="large" type="submit">Apply</button>
+					<div class="form-group">
+						<label for="budget" class="form-group__label required">Budget</label>
+						<div class="form-group__range-container">
+							<input type="range" id="budget" name="budget" class="form-group__range-input" min="500" max="10000" step="500" value="500" required>
+							<output id="budget-value" class="form-group__range-output">$500</output>
+						</div>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn large">Apply Now</button>
+					</div>
 				</form>
+			</div>
+			<div class="stack" gap="m">
+				<div class="stack" gap="3xs">
+					<p class="overline">Phone</p><a href="">352-459-8464</a>
+				</div>
+				<div class="stack" gap="3xs">
+					<p class="overline">Email</p><a href="">Dustin@heisey.email</a>
+				</div>
 			</div>
 		</div>
 	</main>
-	<footer class="stack align-center gap-l">
-		<div class="inline full justify-between">
-			<a class="media" href="/index.html">
-				<svg focusable="false" class="logo" viewBox="0 0 100 245.68853462923755">
-					<use href="assets/icons.svg#logo" />
-				</svg>
-				<span class="sr-only">Logo</span>
-			</a>
-			<ul class="inline">
-				<li><a href="/about.html" class="navigation">About</a></li>
-				<li><a href="/resume.html" class="navigation">Resume</a></li>
-				<li><a href="/services.html" class="navigation">Services</a></li>
-				<li><a href="/portfolio.html" class="navigation">Portfolio</a></li>
-				<li><a href="/start-a-project.html" class="navigation">Start a Project</a></li>
-			</ul>
-			<ul class="inline justify-end">
-				<li>
-					<a class="media" href="https://www.upwork.com/freelancers/dustinheisey">
-						<svg focusable="false" class="icon">
-							<use href="assets/icons.svg#logo-upwork" />
-						</svg>
-						<span class="sr-only">Upwork</span>
-					</a>
-				</li>
-				<li>
-					<a class="media" href="https://github.com/dustinheisey">
-						<svg focusable="false" class="icon">
-							<use href="./assets/icons.svg#logo-github" />
-						</svg>
-						<span class="sr-only">Github</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<hr>
-		<div class="inline full justify-between">
-			<a href="https://www.websitecarbon.com/" class="tag">This page emitted just 0.001g of CO2
-			</a>
-			<small>Copyright &copy; 2019 - 2023 <a href="/index.html" class="caption">Dustin Heisey</a></small>
+	<footer class="bg-brand">
+		<div class="region stack align-center" gap="l">
+			<div class="cluster full justify-between">
+				<a class="media" href="/index.html">
+					<svg focusable="false" class="logo color-lighter" viewBox="0 0 100 245.68853462923755">
+						<use href="assets/icons.svg#logo" />
+					</svg>
+					<span class="sr-only">Logo</span>
+				</a>
+				<ul class="cluster" gap="m">
+					<li><a href="/about.html" class="navigation color-lighter">About</a></li>
+					<li><a href="/resume.html" class="navigation color-lighter">Resume</a></li>
+					<li><a href="/services.html" class="navigation color-lighter">Services</a></li>
+					<li><a href="/portfolio.html" class="navigation color-lighter">Portfolio</a></li>
+					<li><a href="/start-a-project.html" class="navigation color-lighter nowrap">Start a Project</a>
+					<li>
+				</ul>
+				<ul class="cluster justify-end">
+					<li><a class="media" href="https://www.upwork.com/freelancers/dustinheisey">
+							<svg focusable="false" class="icon color-lighter">
+								<use href="assets/icons.svg#logo-upwork" />
+							</svg>
+							<span class="sr-only">Upwork</span>
+						</a></li>
+					<li><a class="media" href="https://github.com/dustinheisey">
+							<svg focusable="false" class="icon color-lighter">
+								<use href="./assets/icons.svg#logo-github" />
+							</svg>
+							<span class="sr-only">Github</span>
+						</a></li>
+				</ul>
+			</div>
+			<hr>
+			<div class="cluster full justify-between">
+				<a href="https://www.websitecarbon.com/" class="tag brand">This page emitted just 0.13g of CO2</a>
+				<small class="color-lighter">Copyright &copy; 2019 - 2023 <a href="/index.html" class="caption color-lighter">Dustin Heisey</a></small>
+			</div>
 		</div>
 	</footer>
+	<script>
+		const budgetInput = document.getElementById('budget');
+		const budgetValue = document.getElementById('budget-value');
+
+		budgetInput.addEventListener('input', function () {
+			budgetValue.textContent = '$' + budgetInput.value;
+		});
+	</script>
 	<script src="dark-mode.js"></script>
 </body>
 

@@ -1,8 +1,0 @@
-.box {
-	border-radius: var(--radius-l);
-	padding: var(--space-l);
-	inline-size: 90%;
-	inline-size: -webkit-fill-available;
-	box-sizing: content-box;
-	box-shadow: var(--shadow-low);
-}

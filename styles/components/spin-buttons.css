@@ -1,0 +1,83 @@
+/* 
+    <div class="spin-group">
+        <label for="spin" class="spin-group__label">Select a value:</label>
+        <div class="spin-group__controls">
+            <button type="button" class="spin-group__button spin-group__button--decrement" aria-label="Decrease value">-</button>
+            <input type="number" id="spin" name="spin-group" class="spin-group__input" min="1" max="10" value="5">
+            <button type="button" class="spin-group__button spin-group__button--increment" aria-label="Increase value">+</button>
+        </div>
+    </div>
+*/
+
+.spin-group__label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #333;
+}
+
+.spin-group__controls {
+	display: flex;
+	align-items: center;
+}
+
+.spin-group__button {
+	display: inline-block;
+	padding: 0.5rem;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+	cursor: pointer;
+}
+
+.spin-group__button:hover,
+.spin-group__button:focus {
+	background-color: #f5f5f5;
+	outline: none;
+}
+
+.spin-group__button[disabled] {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.spin-group__button--decrement {
+	margin-right: 0.5rem;
+}
+
+.spin-group__button--increment {
+	margin-left: 0.5rem;
+}
+
+.spin-group__input {
+	display: block;
+	width: 100%;
+	margin: 0 0.5rem;
+	padding: 0.5rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+	text-align: center;
+}
+
+.spin-group__input::-webkit-inner-spin-button,
+.spin-group__input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.spin-group__input:focus {
+	outline: none;
+	border-color: #0077c2;
+}

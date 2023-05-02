@@ -1,0 +1,45 @@
+/* 
+    <div class="range-group">
+        <label for="range" class="range-group__label">Select a value:</label>
+        <input type="range" id="range" name="range-group" class="range-group__input" min="0" max="100" value="50" step="1">
+        <output for="range" class="range-group__output">50</output>
+    </div>
+*/
+
+.range-group__label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #333;
+}
+
+.range-group__input {
+	display: block;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	height: 0.5rem;
+	border-radius: 0.25rem;
+	outline: none;
+}
+
+.range-group__input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 1rem;
+	height: 1rem;
+	background-color: #0077c2;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.range-group__output {
+	display: block;
+	margin-top: 0.5rem;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #333;
+}

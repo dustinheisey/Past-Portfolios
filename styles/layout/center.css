@@ -1,8 +1,0 @@
-/* Center a box */
-.center {
-	box-sizing: content-box;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}

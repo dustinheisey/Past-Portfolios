@@ -6,18 +6,17 @@ button,
 	white-space: nowrap;
 	cursor: pointer;
 	max-inline-size: 100%;
-	background-color: var(--color-brand);
-	font-family: var(--font-family-body);
-	color: var(--color-lighter);
+	background-color: var(--primary-ui);
+	font-family: var(--font-family-body-text);
+	color: var(--grey-100);
 	border-radius: var(--radius-s);
 	font-size: var(--font-size-0);
-	font-weight: var(--font-weight-btn, var(--font-weight-body));
-	line-height: var(--line-height-body);
-	text-transform: var(--text-transform-btn, capitalize);
+	font-weight: 700;
+	line-height: var(--line-height-body-text);
 	padding: var(--space-2xs) var(--space-m);
-	border: none;
+	border: 1px solid var(--primary-ui);
 	transition: all 0.5s ease 0s;
-	box-shadow: var(--shadow-btn);
+	box-shadow: var(--shadow-s);
 }
 
 :is(button, .btn).large {
@@ -26,29 +25,44 @@ button,
 }
 
 :is(button, .btn):hover {
-	box-shadow: var(--shadow-btn-hover);
+	box-shadow: var(--shadow-m);
 }
 
 :is(button, .btn):active {
-	box-shadow: var(--shadow-btn-pressed);
+	box-shadow: none;
 }
 
 :is(button, .btn).secondary {
-	/* background-color: var(--color-brand-muted);
-	color: var(--color-brand-primary); */
-	box-shadow: none;
-}
-
-:is(button, .btn):is(.secondary, .tertiary):is(:hover, :active) {
-	box-shadow: none;
-}
-
-:is(button, .btn).tertiary {
-	/* background-color: transparent;
-	color: var(--color-brand-primary); */
+	background-color: transparent;
+	color: var(--primary-text);
 	box-shadow: none;
 }
 
 :is(button, .btn).tertiary:is(:hover, :active) {
-	/* background-color: var(--color-brand-muted); */
+	box-shadow: none;
 }
+
+:is(button, .btn).tertiary {
+	background-color: transparent;
+	color: var(--primary-text);
+	border-color: transparent;
+	text-decoration: underline;
+	box-shadow: none;
+}
+
+:is(button, .btn).fab {
+	border-radius: 50%;
+	padding: var(--space-2xs);
+	box-shadow: var(--shadow-xl);
+}
+
+:is(button, .btn).icon {
+	padding: var(--space-2xs);
+	box-shadow: none;
+}
+
+/* :is(button, .btn).icon:is(:hover, :active) {
+	background: var(--primary-bg);
+	color: var(--primary-text);
+	box-shadow: none;
+} */

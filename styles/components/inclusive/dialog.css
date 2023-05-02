@@ -1,0 +1,55 @@
+/* 
+    <button id="open-dialog" aria-haspopup="dialog">Open dialog</button>
+    <div id="dialog" class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" aria-describedby="dialog-description" hidden>
+        <div class="dialog__overlay" aria-hidden="true"></div>
+        <div class="dialog__content">
+            <h2 id="dialog-title">Dialog title</h2>
+            <p id="dialog-description">Dialog description</p>
+            <button id="close-dialog">Close dialog</button>
+        </div>
+    </div>
+*/
+
+.dialog {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	z-index: 100;
+}
+
+.dialog[hidden] {
+	display: none;
+}
+
+.dialog__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog__content {
+	position: relative;
+	z-index: 101;
+	width: 90%;
+	max-width: 30rem;
+	margin: 3rem auto;
+	padding: 1rem;
+	background-color: #fff;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.dialog__content > *:last-child {
+	margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+	.dialog__content {
+		margin: 6rem auto;
+	}
+}

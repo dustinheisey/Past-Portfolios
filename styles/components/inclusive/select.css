@@ -1,0 +1,52 @@
+/* 
+    <label for="select" class="select-group__label">Select a value:</label>
+    <select id="select" name="select-group" class="select-group__input">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+*/
+
+.select-group__label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #333;
+}
+
+.select-group__input {
+	display: block;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+	appearance: none;
+	-webkit-appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M.5 2l3 3 3-3'/3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 0.5rem center;
+	background-size: 1rem auto;
+}
+
+.select-group__input::-ms-expand {
+	display: none;
+}
+
+.select-group__input:focus {
+	outline: none;
+	border-color: #0077c2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.select-group__input,
+	.select-group__input:focus {
+		transition: none;
+	}
+}

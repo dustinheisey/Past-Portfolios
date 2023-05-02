@@ -1,0 +1,67 @@
+/* 
+    <div class="dropdown">
+        <button class="dropdown__toggle" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="dropdown-label">Dropdown label</button>
+        <ul class="dropdown__menu" role="listbox" aria-labelledby="dropdown-label" hidden>
+            <li class="dropdown__item" role="option">Option 1</li>
+            <li class="dropdown__item" role="option">Option 2</li>
+            <li class="dropdown__item" role="option">Option 3</li>
+        </ul>
+    </div>
+*/
+
+.dropdown__toggle {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1;
+	text-align: left;
+	text-decoration: none;
+	white-space: nowrap;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+	background-color: #fff;
+	color: #333;
+	cursor: pointer;
+}
+
+.dropdown__toggle:focus {
+	outline: none;
+	border-color: #0077c2;
+}
+
+.dropdown__menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+}
+
+.dropdown__item {
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+	text-align: left;
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+}
+
+.dropdown__item:hover,
+.dropdown__item:focus {
+	background-color: #f5f5f5;
+	outline: none;
+}
+
+.dropdown__item[aria-selected="true"] {
+	background-color: #0077c2;
+	color: #fff;
+}

@@ -1,0 +1,220 @@
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.333,5,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+	/* Step -2: 12.50px → 11.26px */
+	--font-size--2: clamp(0.7rem, calc(0.81rem + -0.13vw), 0.78rem);
+
+	/* Step -1: 15.00px → 15.00px */
+	--font-size--1: clamp(0.94rem, calc(0.94rem + 0vw), 0.94rem);
+
+	/* Step 0: 18.00px → 20.00px */
+	--font-size-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+
+	/* Step 1: 21.60px → 26.66px */
+	--font-size-1: clamp(1.35rem, calc(1.24rem + 0.55vw), 1.67rem);
+
+	/* Step 2: 25.92px → 35.54px */
+	--font-size-2: clamp(1.62rem, calc(1.41rem + 1.05vw), 2.22rem);
+
+	/* Step 3: 31.10px → 47.37px */
+	--font-size-3: clamp(1.94rem, calc(1.59rem + 1.77vw), 2.96rem);
+
+	/* Step 4: 37.32px → 63.15px */
+	--font-size-4: clamp(2.33rem, calc(1.77rem + 2.81vw), 3.95rem);
+
+	/* Step 5: 44.79px → 84.17px */
+	--font-size-5: clamp(2.8rem, calc(1.94rem + 4.28vw), 5.26rem);
+
+	--font-family-headline: Charter, "Bitstream Charter", "Sitka Text", Cambria,
+		serif;
+	--font-family-body-text: Inter, Roboto, "Helvetica Neue", "Arial Nova",
+		"Nimbus Sans", Arial, sans-serif;
+
+	--line-height-headline: 1.2;
+	--line-height-body-text: 1.5;
+
+	--letter-spacing-headline: 0.05em;
+	--letter-spacing-overline: 0.1em;
+
+	--font-weight-headline: 700;
+	--font-weight-body-text: 400;
+
+	--measure-hero: 20ch;
+	--measure-page: 25ch;
+	--measure-region: 30ch;
+	--measure-section: 30ch;
+	--measure-title: 20ch;
+	--measure-body-text: 66ch;
+	--measure-blockquote: 40ch;
+
+	/* Rhythmn Variables */
+	--rhythmn-hero: var(--space-m);
+	--rhythmn-page: var(--space-m);
+	--rhythmn-region: var(--space-s);
+	--rhythmn-section: var(--space-xs);
+	--rhythmn-title: var(--space-2xs);
+	--rhythmn-overline: var(--space-2xs);
+	--rhythmn-label: var(--space-xs);
+	--rhythmn-body-text: var(--space-s);
+	--rhythmn-caption: var(--space-2xs);
+	--rhythmn-blockquote: var(--space-s);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-family-headline);
+	font-weight: var(--font-weight-headline);
+	line-height: var(--line-height-headline);
+	letter-spacing: var(--letter-spacing-headline);
+}
+
+p,
+li,
+small {
+	font-size: var(--font-size-0);
+	font-family: var(--font-family-body-text);
+	font-weight: var(--font-weight-body-text);
+	line-height: var(--line-height-body-text);
+	max-inline-size: var(--measure-body-text);
+}
+
+.hero-headline {
+	font-size: var(--font-size-5);
+	max-inline-size: var(--measure-hero);
+}
+
+.page-headline {
+	font-size: var(--font-size-4);
+	max-inline-size: var(--measure-page);
+}
+
+.region-headline {
+	font-size: var(--font-size-3);
+	max-inline-size: var(--measure-region);
+}
+
+.section-headline {
+	font-size: var(--font-size-2);
+	max-inline-size: var(--measure-section);
+}
+
+.title-headline {
+	font-size: var(--font-size-0);
+	font-weight: var(--font-weight-headline);
+	max-inline-size: var(--measure-title);
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-2xs);
+}
+
+.overline {
+	font-size: var(--font-size--1);
+	text-transform: uppercase;
+	letter-spacing: var(--letter-spacing-overline);
+	font-weight: var(--font-weight-headline);
+}
+
+label,
+legend {
+	font-size: var(--font-size--1);
+	font-family: var(--font-family-body-text);
+	font-weight: var(--font-weight-body-text);
+	line-height: var(--light-height-body-text);
+	max-inline-size: var(--measure-body-text);
+}
+
+.required::after {
+	content: "*";
+	font-size: var(--font-size-0);
+	color: var(--accent-1-ui, var(--primary-ui));
+}
+
+.caption,
+small,
+small > a {
+	font-size: var(--font-size--1);
+}
+
+blockquote {
+	font-family: var(--font-family-blockquote);
+	font-size: var(--font-size-1);
+	max-inline-size: var(--measure-blockquote);
+	border: none;
+	quotes: "\201C""\201D""\2018""\2019";
+	position: relative;
+}
+
+blockquote:before {
+	content: open-quote;
+	font-size: 6.5em;
+	position: absolute;
+	top: -0.6em;
+	color: var(--primary);
+}
+
+blockquote footer {
+	padding: 0;
+	margin-block-start: var(--space-s);
+}
+
+hr {
+	border: 0;
+	inline-size: 100%;
+	border-top: 1px solid var(--grey);
+}
+
+.hero-headline + * {
+	margin-block-start: var(--rhythmn-hero);
+}
+
+.page-headline + * {
+	margin-block-start: var(--rhythmn-page);
+}
+
+.region-headline + * {
+	margin-block-start: var(--rhythmn-region);
+}
+
+.section-headline + * {
+	margin-block-start: var(--rhythmn-section);
+}
+
+.title-headline + * {
+	margin-block-start: var(--rhythmn-title);
+}
+
+.overline + * {
+	margin-block-start: var(--rhythmn-overline);
+}
+
+p + * {
+	margin-block-start: var(--rhythmn-body-text);
+}
+
+.caption + * {
+	margin-block-start: var(--rhythmn-caption);
+}
+
+blockquote + * {
+	margin-block-start: var(--rhythmn-blockquote);
+}
+
+.text-start {
+	text-align: start !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-end {
+	text-align: end !important;
+}
+
+.nowrap {
+	white-space: nowrap !important;
+}
